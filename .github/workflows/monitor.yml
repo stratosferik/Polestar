@@ -3,6 +3,9 @@ name: Polestar stock monitor
 on:
   schedule:
     - cron: '17 5,11,17 * * *'   # 3x a day (UTC)
+  push:                          # also run when the monitor itself changes
+    branches: [main]
+    paths: ['src/**', 'test/**', 'package.json', '.github/workflows/**']
   workflow_dispatch:
     inputs:
       deadline:
