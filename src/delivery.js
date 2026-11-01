@@ -149,6 +149,9 @@ function parseDelivery(value, now = new Date()) {
     return { date: d, kind: 'relative' };
   }
 
+  // "Tilgjengelig kun hos Polestar Tønsberg" (no date) = in stock at that store.
+  if (/tilgjengelig (kun |bare )?(hos|på|i) /.test(lower)) return { date: today, kind: 'immediate' };
+
   return null;
 }
 

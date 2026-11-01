@@ -50,3 +50,10 @@ test('deadline', () => {
   assert.equal(resolveDeadline('2026-12-24').toISOString().slice(0, 10), '2026-12-24');
   assert.throws(() => resolveDeadline('24.12.2026'));
 });
+
+test('texts seen on polestar.com/no', () => {
+  assert.equal(d('Tilgjengelig nå på utvalgte lokasjoner'), '2026-11-01');
+  assert.equal(d('Tilgjengelig kun hos Polestar Tønsberg'), '2026-11-01');
+  assert.equal(d('Tilgjengelig fra Slutten av desember hos alle lokasjoner'), '2026-12-31');
+  assert.equal(d('Tilgjengelig fra tidlig januar hos alle lokasjoner'), '2027-01-31');
+});

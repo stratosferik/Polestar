@@ -78,22 +78,30 @@ function findCarArrays(node, found = [], depth = 0) {
   return found;
 }
 
+function bestDelivery(values, now) {
+  const parsed = values.map((v) => parseDelivery(v.value, now)).filter(Boolean);
+  // An exact date beats a label like "tidlig desember".
+  return parsed.find((p) => p.kind === 'date') || parsed[0] || null;
+}
+
 function carsFromJson(bodies, now) {
   const cars = new Map();
   for (const { url, body } of bodies) {
+    if (url.includes('ld+json')) continue; // schema.org copy of the same cars
     for (const arr of findCarArrays(body)) {
-      for (const car of arr) {
-        const id = carId(car) || JSON.stringify(car).slice(0, 500);
-        if (cars.has(id)) continue;
+      const items = arr.map((car) => {
         const values = deliveryValues(car);
-        let parsed = null;
-        let raw = values.map((v) => `${v.field}=${v.value}`).join('; ');
-        for (const v of values) {
-          parsed = parseDelivery(v.value, now);
-          if (parsed) break;
-        }
-        cars.set(id, { id, delivery_raw: raw, parsed, source_url: url });
-      }
+        return {
+          id: carId(car),
+          delivery_raw: values.map((v) => `${v.field}=${v.value}`).join('; '),
+          parsed: bestDelivery(values, now),
+          source_url: url,
+        };
+      });
+      // Real car lists have ids and readable dates; page text/translations don't.
+      const good = items.filter((c) => c.id && c.parsed).length;
+      if (good < Math.max(1, items.length * 0.5)) continue;
+      for (const c of items) if (c.id && !cars.has(c.id)) cars.set(c.id, c);
     }
   }
   return [...cars.values()];
@@ -140,6 +148,13 @@ async function cardsFromDom(page) {
 }
 
 function carsFromDom(cards, now) {
+  const seen = new Set();
+  cards = cards.filter((c) => {
+    const k = c.href || c.text;
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
   return cards.map((c) => {
     const lines = c.text.split('\n').map((l) => l.trim()).filter(Boolean);
     const idxs = lines.map((l, i) => (DELIVERY_LINE_RE.test(l) ? i : -1)).filter((i) => i >= 0);
@@ -240,7 +255,10 @@ async function scrapeModel(browser, key, model, now) {
   await context.close();
 
   const parsedCount = (cars) => cars.filter((c) => c.parsed).length;
-  const useJson = parsedCount(jsonCars) > 0 && parsedCount(jsonCars) >= parsedCount(domCars);
+  const useJson = parsedCount(jsonCars) > 0;
+  if (useJson && domCars.length && domCars.length !== jsonCars.length) {
+    console.warn(`  note: page shows ${domCars.length} cars, data has ${jsonCars.length}`);
+  }
   return { source: useJson ? 'json' : domCars.length ? 'page' : 'none', cars: useJson ? jsonCars : domCars, jsonCount: jsonCars.length, domCount: domCars.length };
 }
 
@@ -297,6 +315,7 @@ async function main() {
         })),
       };
       console.log(`  found ${r.cars.length} cars (json: ${r.jsonCount}, page: ${r.domCount}, using ${r.source})`);
+      if (r.cars[0]) console.log(`  sample: ${r.cars[0].id} | ${r.cars[0].delivery_raw}`.slice(0, 400));
     }
   } finally {
     await browser.close();
