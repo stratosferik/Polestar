@@ -1,0 +1,349 @@
+#!/usr/bin/env node
+// Loads the Polestar Norway stock-car pages, finds every listed car and its
+// delivery estimate, and counts how many are due on or before the deadline.
+//
+// Two ways of finding cars, best one wins:
+//   1. JSON the page downloads (most reliable: has the structured data).
+//   2. The rendered page text, split into car cards (fallback).
+//
+// Env vars:
+//   DEADLINE=YYYY-MM-DD   default: 31 Dec this year
+//   MODELS=coupe,suv      which models to check
+//   DATA_DIR / DEBUG_DIR  where results and debug dumps go
+//   HEADFUL=1             show the browser
+
+const fs = require('fs');
+const path = require('path');
+const { chromium } = require('playwright');
+const { parseDelivery, resolveDeadline } = require('./delivery');
+
+const ALL_MODELS = {
+  coupe: { name: 'Polestar 4 Coupe', url: 'https://www.polestar.com/no/stock-cars/polestar-4-coupe/' },
+  suv: { name: 'Polestar 4 SUV', url: 'https://www.polestar.com/no/stock-cars/polestar-4-suv/' },
+};
+
+const ROOT = path.join(__dirname, '..');
+const DATA_DIR = process.env.DATA_DIR || path.join(ROOT, 'data');
+const DEBUG_DIR = process.env.DEBUG_DIR || path.join(ROOT, 'debug');
+const HISTORY_CSV = path.join(DATA_DIR, 'history.csv');
+const LATEST_JSON = path.join(DATA_DIR, 'latest.json');
+const CHANGE_MD = path.join(DEBUG_DIR, 'change.md');
+
+const DELIVERY_KEY_RE = /deliver|leveranse|levering|eta\b|^eta|arrival|availab|readyDate|ready_date/i;
+const ID_KEYS = ['vin', 'VIN', 'id', 'stockId', 'stockCarId', 'carId', 'orderId', 'orderNumber', 'registrationNumber', 'uuid', 'key'];
+const DELIVERY_LINE_RE = /(levering|leveranse|leveres|leveringstid|levert|delivery|deliver|klar for|på lager|tilgjengelig)/i;
+
+// ---------- JSON extraction ----------
+
+function deepEntries(obj, depth = 3, prefix = '') {
+  const out = [];
+  if (!obj || typeof obj !== 'object' || depth < 0) return out;
+  for (const [k, v] of Object.entries(obj)) {
+    const p = prefix ? `${prefix}.${k}` : k;
+    out.push([p, k, v]);
+    if (v && typeof v === 'object' && !Array.isArray(v)) out.push(...deepEntries(v, depth - 1, p));
+  }
+  return out;
+}
+
+function deliveryValues(car) {
+  return deepEntries(car)
+    .filter(([, k, v]) => DELIVERY_KEY_RE.test(k) && v != null && typeof v !== 'boolean' && typeof v !== 'object')
+    .map(([p, , v]) => ({ field: p, value: v }));
+}
+
+function carId(car) {
+  for (const [, k, v] of deepEntries(car, 2)) {
+    if (ID_KEYS.includes(k) && (typeof v === 'string' || typeof v === 'number') && String(v).length >= 3) return String(v);
+  }
+  return null;
+}
+
+// Find arrays of objects where most items carry a delivery-like field.
+function findCarArrays(node, found = [], depth = 0) {
+  if (!node || typeof node !== 'object' || depth > 12) return found;
+  if (Array.isArray(node)) {
+    const objs = node.filter((x) => x && typeof x === 'object' && !Array.isArray(x));
+    if (objs.length && objs.length >= node.length * 0.8) {
+      const withDelivery = objs.filter((o) => deliveryValues(o).length > 0).length;
+      if (withDelivery >= Math.max(1, objs.length * 0.5)) {
+        found.push(objs);
+        return found;
+      }
+    }
+    node.forEach((x) => findCarArrays(x, found, depth + 1));
+  } else {
+    Object.values(node).forEach((x) => findCarArrays(x, found, depth + 1));
+  }
+  return found;
+}
+
+function carsFromJson(bodies, now) {
+  const cars = new Map();
+  for (const { url, body } of bodies) {
+    for (const arr of findCarArrays(body)) {
+      for (const car of arr) {
+        const id = carId(car) || JSON.stringify(car).slice(0, 500);
+        if (cars.has(id)) continue;
+        const values = deliveryValues(car);
+        let parsed = null;
+        let raw = values.map((v) => `${v.field}=${v.value}`).join('; ');
+        for (const v of values) {
+          parsed = parseDelivery(v.value, now);
+          if (parsed) break;
+        }
+        cars.set(id, { id, delivery_raw: raw, parsed, source_url: url });
+      }
+    }
+  }
+  return [...cars.values()];
+}
+
+// ---------- DOM extraction ----------
+
+// Car cards show a price; this also tells a car card apart from filter panels.
+const PRICE_RE_SRC = String.raw`\d[\d\s\u00a0.]{2,}\s?(kr|nok|,-)|(kr|nok)\s?\d`;
+
+async function cardsFromDom(page) {
+  return page.evaluate(({ lineReSrc, priceReSrc }) => {
+    const lineRe = new RegExp(lineReSrc, 'i');
+    const priceRe = new RegExp(priceReSrc, 'gi');
+    const text = (el) => el.innerText || '';
+    const countLines = (el) => text(el).split('\n').filter((l) => lineRe.test(l)).length;
+    const countPrices = (el) => (text(el).match(priceRe) || []).length;
+    const skip = 'header, footer, nav, [role="dialog"], [id*="cookie" i], [class*="cookie" i], select, option, button, script, style';
+    const cards = new Set();
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      const el = walker.currentNode.parentElement;
+      if (!el || !lineRe.test(walker.currentNode.textContent || '') || el.closest(skip)) continue;
+      if (!el.getClientRects().length) continue; // hidden
+      // 1) Climb until the block shows a price: that's (part of) a car card.
+      let card = el;
+      while (card !== document.body && countPrices(card) === 0) card = card.parentElement;
+      if (card === document.body || countPrices(card) > 3) continue;
+      // 2) Keep climbing while the parent adds no other car's content.
+      let lines = countLines(card);
+      let prices = countPrices(card);
+      while (card.parentElement && card.parentElement !== document.body) {
+        const p = card.parentElement;
+        if (countLines(p) !== lines || countPrices(p) !== prices) break;
+        card = p;
+      }
+      cards.add(card);
+    }
+    return [...cards].map((card) => {
+      const link = card.matches('a[href]') ? card : card.querySelector('a[href]') || card.closest('a[href]');
+      return { href: link ? link.href : null, text: text(card).slice(0, 3000) };
+    });
+  }, { lineReSrc: DELIVERY_LINE_RE.source, priceReSrc: PRICE_RE_SRC });
+}
+
+function carsFromDom(cards, now) {
+  return cards.map((c) => {
+    const lines = c.text.split('\n').map((l) => l.trim()).filter(Boolean);
+    const idxs = lines.map((l, i) => (DELIVERY_LINE_RE.test(l) ? i : -1)).filter((i) => i >= 0);
+    // The date is often on the line after the "Levering" label.
+    let parsed = null;
+    let idx = idxs[0] ?? -1;
+    for (const i of idxs) {
+      for (const cand of [lines[i], `${lines[i]} ${lines[i + 1] || ''}`]) {
+        parsed = parseDelivery(cand, now);
+        if (parsed) break;
+      }
+      if (parsed) { idx = i; break; }
+    }
+    return {
+      id: c.href || lines.slice(0, 3).join(' | '),
+      title: lines.slice(0, 2).join(' '),
+      delivery_raw: idx >= 0 ? lines.slice(idx, idx + 2).join(' ') : '',
+      parsed,
+    };
+  });
+}
+
+// ---------- page interaction ----------
+
+async function clickFirst(page, re, timeout = 1500) {
+  const loc = page.getByRole('button', { name: re }).first();
+  try {
+    await loc.waitFor({ state: 'visible', timeout });
+    await loc.click({ timeout });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function loadAll(page) {
+  await clickFirst(page, /godta alle|aksepter alle|accept all|tillat alle|godta|aksepter|accept/i, 8000);
+  await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+  for (let i = 0; i < 60; i++) {
+    await page.mouse.wheel(0, 20000);
+    await page.waitForTimeout(800);
+    const clicked = await clickFirst(page, /vis flere|last inn flere|se flere|vis mer|show more|load more/i, 1500);
+    if (!clicked) {
+      // One more scroll in case the list loads on scroll, then stop if nothing grows.
+      const h1 = await page.evaluate(() => document.body.scrollHeight);
+      await page.mouse.wheel(0, 20000);
+      await page.waitForTimeout(1500);
+      const h2 = await page.evaluate(() => document.body.scrollHeight);
+      if (h2 <= h1) break;
+    }
+    await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {});
+  }
+}
+
+async function scrapeModel(browser, key, model, now) {
+  const context = await browser.newContext({
+    locale: 'nb-NO',
+    timezoneId: 'Europe/Oslo',
+    viewport: { width: 1366, height: 900 },
+    userAgent:
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+  });
+  const page = await context.newPage();
+  const bodies = [];
+  page.on('response', async (res) => {
+    try {
+      const ct = res.headers()['content-type'] || '';
+      if (!ct.includes('json')) return;
+      bodies.push({ url: res.url(), body: await res.json() });
+    } catch {}
+  });
+
+  await page.goto(model.url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+  await page.waitForLoadState('networkidle', { timeout: 30000 }).catch(() => {});
+
+  // Data embedded in the HTML (e.g. Next.js) counts as JSON too.
+  for (const sel of ['script#__NEXT_DATA__', 'script[type="application/json"]', 'script[type="application/ld+json"]']) {
+    for (const txt of await page.$$eval(sel, (els) => els.map((e) => e.textContent)).catch(() => [])) {
+      try { bodies.push({ url: `${model.url}#${sel}`, body: JSON.parse(txt) }); } catch {}
+    }
+  }
+
+  await loadAll(page);
+
+  const jsonCars = carsFromJson(bodies, now);
+  const domCars = carsFromDom(await cardsFromDom(page), now);
+
+  const dbg = path.join(DEBUG_DIR, key);
+  fs.mkdirSync(dbg, { recursive: true });
+  fs.writeFileSync(path.join(dbg, 'page.html'), await page.content());
+  await page.screenshot({ path: path.join(dbg, 'page.png'), fullPage: true }).catch(() => {});
+  fs.writeFileSync(
+    path.join(dbg, 'json-responses.json'),
+    JSON.stringify(bodies.map((b) => ({ url: b.url, body: b.body })), null, 1).slice(0, 20_000_000),
+  );
+  fs.writeFileSync(path.join(dbg, 'cars.json'), JSON.stringify({ jsonCars, domCars }, null, 2));
+
+  await context.close();
+
+  const parsedCount = (cars) => cars.filter((c) => c.parsed).length;
+  const useJson = parsedCount(jsonCars) > 0 && parsedCount(jsonCars) >= parsedCount(domCars);
+  return { source: useJson ? 'json' : domCars.length ? 'page' : 'none', cars: useJson ? jsonCars : domCars, jsonCount: jsonCars.length, domCount: domCars.length };
+}
+
+// ---------- reporting ----------
+
+function summarise(cars, deadline) {
+  const before = cars.filter((c) => c.parsed && c.parsed.date <= deadline);
+  const after = cars.filter((c) => c.parsed && c.parsed.date > deadline);
+  const unknown = cars.filter((c) => !c.parsed);
+  return { total: cars.length, before_deadline: before.length, after_deadline: after.length, unknown: unknown.length };
+}
+
+function iso(d) {
+  return d.toISOString().slice(0, 10);
+}
+
+function appendHistory(rows) {
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  const header = 'timestamp,deadline,model,total,before_deadline,after_deadline,unknown_delivery,source\n';
+  if (!fs.existsSync(HISTORY_CSV)) fs.writeFileSync(HISTORY_CSV, header);
+  fs.appendFileSync(HISTORY_CSV, rows.map((r) => r.join(',')).join('\n') + '\n');
+}
+
+async function main() {
+  const now = new Date();
+  const deadline = resolveDeadline(process.env.DEADLINE, now);
+  const keys = (process.env.MODELS || 'coupe,suv').split(',').map((s) => s.trim()).filter(Boolean);
+  const models = Object.fromEntries(keys.map((k) => {
+    if (!ALL_MODELS[k]) throw new Error(`Unknown model "${k}". Options: ${Object.keys(ALL_MODELS).join(', ')}`);
+    return [k, { ...ALL_MODELS[k], url: process.env[`URL_${k.toUpperCase()}`] || ALL_MODELS[k].url }];
+  }));
+
+  const previous = fs.existsSync(LATEST_JSON) ? JSON.parse(fs.readFileSync(LATEST_JSON, 'utf8')) : null;
+  fs.mkdirSync(DEBUG_DIR, { recursive: true });
+
+  const browser = await chromium.launch({ headless: !process.env.HEADFUL });
+  const results = {};
+  try {
+    for (const [key, model] of Object.entries(models)) {
+      console.log(`Checking ${model.name} …`);
+      const r = await scrapeModel(browser, key, model, now);
+      results[key] = {
+        name: model.name,
+        url: model.url,
+        source: r.source,
+        ...summarise(r.cars, deadline),
+        cars: r.cars.map((c) => ({
+          id: c.id,
+          title: c.title,
+          delivery_raw: c.delivery_raw,
+          estimated_delivery: c.parsed ? iso(c.parsed.date) : null,
+          estimate_kind: c.parsed ? c.parsed.kind : null,
+          before_deadline: c.parsed ? c.parsed.date <= deadline : null,
+        })),
+      };
+      console.log(`  found ${r.cars.length} cars (json: ${r.jsonCount}, page: ${r.domCount}, using ${r.source})`);
+    }
+  } finally {
+    await browser.close();
+  }
+
+  const stamp = now.toISOString();
+  const latest = { checked_at: stamp, deadline: iso(deadline), models: results };
+  fs.writeFileSync(LATEST_JSON, JSON.stringify(latest, null, 2) + '\n');
+  appendHistory(Object.entries(results).map(([k, r]) => [stamp, iso(deadline), k, r.total, r.before_deadline, r.after_deadline, r.unknown, r.source]));
+
+  // Human-readable summary
+  const lines = [
+    `## Polestar 4 stock in Norway — deliverable by ${iso(deadline)}`,
+    '',
+    '| Model | Before deadline | After | Unknown | Total | Change |',
+    '|---|---|---|---|---|---|',
+  ];
+  const changes = [];
+  for (const [k, r] of Object.entries(results)) {
+    const prev = previous && previous.models && previous.models[k];
+    const delta = prev && prev.deadline === iso(deadline) ? r.before_deadline - prev.before_deadline : null;
+    if (delta) changes.push(`${r.name}: ${prev.before_deadline} → **${r.before_deadline}** (${delta > 0 ? '+' : ''}${delta})`);
+    lines.push(`| [${r.name}](${r.url}) | **${r.before_deadline}** | ${r.after_deadline} | ${r.unknown} | ${r.total} | ${delta == null ? '–' : (delta > 0 ? '+' : '') + delta} |`);
+  }
+  lines.push('', `Checked ${stamp}.`);
+  const summary = lines.join('\n');
+  console.log('\n' + summary);
+  if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary + '\n');
+
+  if (changes.length) {
+    fs.writeFileSync(CHANGE_MD, `Cars deliverable by ${iso(deadline)} changed:\n\n- ${changes.join('\n- ')}\n\n${summary}\n`);
+  } else if (fs.existsSync(CHANGE_MD)) {
+    fs.unlinkSync(CHANGE_MD);
+  }
+
+  const empty = Object.values(results).filter((r) => r.total === 0);
+  if (empty.length) {
+    console.error(`\nNo cars found for: ${empty.map((r) => r.name).join(', ')}. The site layout may have changed — see the debug/ folder.`);
+    process.exitCode = 2;
+  }
+}
+
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
+
+module.exports = { carsFromJson, carsFromDom, findCarArrays, summarise };
