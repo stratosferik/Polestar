@@ -37,11 +37,16 @@ function period(label, date) {
   return `${l.charAt(0).toUpperCase()}${l.slice(1)} ${y}`;
 }
 
+const osloTime = (iso) => new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Oslo', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).format(new Date(iso));
+const shortDate = (d) => (d ? new Intl.DateTimeFormat('en-GB', { timeZone: 'UTC', day: 'numeric', month: 'short' }).format(new Date(d)) : '');
+const CHANGE = { added: 'New in stock', removed: 'Gone', delivery_changed: 'Delivery moved' };
+
 const read = (f) => fs.readFileSync(path.join(ROOT, 'data', f), 'utf8');
 const latest = JSON.parse(read('latest.json'));
 
 const history = parseCsv(read('history.csv')).map((r) => ({
   checked_at: r.timestamp,
+  checked_label: osloTime(r.timestamp),
   model: MODEL[r.model] || r.model,
   total: Number(r.total),
   by_deadline: Number(r.before_deadline),
@@ -79,6 +84,11 @@ if (fs.existsSync(path.join(ROOT, 'data', 'changes.csv'))) {
     delivery_label: r.delivery_label,
     delivery_from: r.delivery_from,
     delivery_to: r.delivery_to,
+    when: osloTime(r.timestamp),
+    change: CHANGE[r.event] || r.event,
+    delivery: r.event === 'delivery_changed'
+      ? `${shortDate(r.delivery_from)} → ${shortDate(r.delivery_to)}`
+      : `${period(r.delivery_label, r.delivery_to || r.delivery_from)} (${shortDate(r.delivery_to || r.delivery_from)})`,
   }));
 }
 

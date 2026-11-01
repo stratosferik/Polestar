@@ -52,3 +52,12 @@ npm test
 
 If a model shows 0 cars the run fails (GitHub emails you). Each run uploads a `debug-…` artifact
 with the page HTML, a screenshot and all JSON the page loaded, which shows what changed on the site.
+
+## Dashboard
+
+A dashboard in the Claude app shows the counts by 31 Dec, a trend chart, the stock-change log
+and the delivery × version breakdown. Claude refreshes it after each check from
+`scripts/dashboard-data.js` (which turns `data/` into its files). The page source is in `dashboard/index.html`.
+
+`data/changes.csv` logs each car that appears, leaves the list (missing two checks in a row,
+since the site sometimes leaves a car out of one load) or moves delivery date.

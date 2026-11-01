@@ -1,0 +1,381 @@
+<meta name="dash-one-writer">
+<style>
+  .ps { display: flex; flex-direction: column; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); max-width: 68rem; margin-inline: auto; }
+  .ps-head { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+  .ps-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .ps-lede { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); }
+  .ps .ps-lede b { color: var(--color-fg); font-weight: 600; }
+  .ps-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: var(--cds-gap-md); }
+  .ps-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+  .ps-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0; }
+  .ps-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: calc(var(--cds-font-size-title) * 1.6); line-height: 1; font-variant-numeric: tabular-nums; }
+  .ps-row { display: flex; align-items: baseline; gap: var(--cds-gap-sm); flex-wrap: wrap; }
+  .ps-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+  .ps-delta { font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; padding: 1px var(--cds-pad-xs); border-radius: var(--cds-radius); border: 1px solid var(--color-border-line); }
+  .ps-delta.up { color: var(--color-ok); }
+  .ps-delta.down { color: var(--color-bad); }
+  .ps-delta.flat { color: var(--color-fg-muted); }
+  .ps-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .ps-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0; }
+  .ps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
+  .ps-chart { position: relative; min-height: 220px; }
+  .ps-chart svg { display: block; overflow: visible; }
+  .ps-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .ps-tip .t { color: var(--cds-text-secondary); }
+  .ps-tip i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .ps-tablebox { max-height: 22rem; overflow: auto; }
+  .ps-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .ps-table th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); position: sticky; top: 0; background: var(--color-panel); padding: var(--cds-pad-xs) var(--cds-pad-sm) var(--cds-pad-xs) 0; border-bottom: 1px solid var(--color-border-line); }
+  .ps-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm) var(--cds-pad-xs) 0; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+  .ps-pill { display: inline-block; white-space: nowrap; }
+  .ps-pill.added { color: var(--color-ok); }
+  .ps-pill.removed { color: var(--color-bad); }
+  .ps-pill.delivery_changed { color: var(--color-warn); }
+  .ps-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; align-self: flex-start; }
+  .ps-seg button { font: inherit; font-size: var(--cds-font-size-caption); background: transparent; color: var(--color-fg); border: 0; padding: var(--cds-pad-xs) var(--cds-pad-md); cursor: pointer; }
+  .ps-seg button[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); }
+  .ps-seg button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: -2px; }
+  .ps-bar-head { display: flex; justify-content: space-between; align-items: center; gap: var(--cds-gap-sm); flex-wrap: wrap; }
+  .ps-periods { display: flex; flex-direction: column; gap: var(--cds-gap-md); }
+  .ps-period { display: flex; flex-direction: column; gap: var(--cds-gap-xs); padding-bottom: var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+  .ps-period:last-child { border-bottom: 0; }
+  .ps-period-head { display: flex; justify-content: space-between; align-items: baseline; gap: var(--cds-gap-sm); }
+  .ps-period-name { font-weight: var(--cds-font-weight-medium); }
+  .ps-period-n { font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); }
+  .ps-flag { font-size: var(--cds-font-size-caption); }
+  .ps-flag.ok { color: var(--color-ok); }
+  .ps-flag.late { color: var(--color-fg-muted); }
+  .ps-period.late .ps-period-name, .ps-period.late .ps-v { color: var(--color-fg-muted); }
+  .ps-v { display: flex; justify-content: space-between; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); }
+  .ps-v span:first-child { min-width: 0; overflow-wrap: anywhere; }
+  .ps-v span:last-child { font-variant-numeric: tabular-nums; }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  [data-dash-source-state=empty] { color: transparent; }
+  .ps-fail { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: inherit; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .ps-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+</style>
+
+<div class="ps">
+  <header class="ps-head" id="top">
+    <h1 class="ps-title">Polestar 4 stock in Norway</h1>
+    <p class="ps-lede"><b data-draw="sum-by" data-source="latest" data-field="by_deadline" data-where="model=All">—</b> of <span data-draw="sum-total" data-source="latest" data-field="total" data-where="model=All">—</span> stock cars can be delivered by 31 December. Last checked <span data-draw="checked" data-source="latest" data-field="checked_label" data-where="model=All">—</span> (Oslo time), three times a day.</p>
+  </header>
+
+  <section class="ps-tiles" id="counts" aria-label="Cars deliverable by 31 December">
+    <div class="ps-card" id="tile-coupe">
+      <p class="ps-label">Polestar 4 Coupe · deliverable by 31 Dec</p>
+      <div class="ps-row">
+        <span class="ps-big" data-draw="by-model" data-model="Coupe" data-source="latest" data-field="by_deadline" data-where="model=Coupe">—</span>
+        <span class="ps-delta flat" data-draw="delta" data-model="Coupe" data-source="latest" data-field="change" data-where="model=Coupe">—</span>
+      </div>
+      <p class="ps-sub">of <span data-draw="total-model" data-model="Coupe" data-source="latest" data-field="total" data-where="model=Coupe">—</span> in stock · change since previous check</p>
+    </div>
+    <div class="ps-card" id="tile-suv">
+      <p class="ps-label">Polestar 4 SUV · deliverable by 31 Dec</p>
+      <div class="ps-row">
+        <span class="ps-big" data-draw="by-model" data-model="SUV" data-source="latest" data-field="by_deadline" data-where="model=SUV">—</span>
+        <span class="ps-delta flat" data-draw="delta" data-model="SUV" data-source="latest" data-field="change" data-where="model=SUV">—</span>
+      </div>
+      <p class="ps-sub">of <span data-draw="total-model" data-model="SUV" data-source="latest" data-field="total" data-where="model=SUV">—</span> in stock · change since previous check</p>
+    </div>
+  </section>
+
+  <div class="ps-grid">
+    <section class="ps-card" id="trend">
+      <h2 class="ps-h2">Deliverable by 31 Dec, over time</h2>
+      <p class="ps-note">Cars with an earliest delivery date on or before 31 December, at each check.</p>
+      <div class="ps-chart" data-draw="trend" data-source="history"></div>
+    </section>
+
+    <section class="ps-card" id="changes">
+      <h2 class="ps-h2">Stock changes</h2>
+      <p class="ps-note">Cars that appeared, left the list (missing two checks in a row) or moved delivery date. Newest first.</p>
+      <div class="ps-tablebox">
+        <table class="ps-table" data-source="changes" data-row-key="event_id">
+          <thead><tr><th data-field="when">When</th><th data-field="model">Model</th><th data-field="change">Change</th><th data-field="version">Version</th><th data-field="delivery">Delivery</th></tr></thead>
+          <tbody data-draw="changes"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <section class="ps-card" id="by-delivery">
+    <div class="ps-bar-head">
+      <h2 class="ps-h2">By delivery period and version</h2>
+      <div class="ps-seg" role="group" aria-label="Model">
+        <button type="button" data-model="Coupe" aria-pressed="true">Coupe</button>
+        <button type="button" data-model="SUV" aria-pressed="false">SUV</button>
+      </div>
+    </div>
+    <p class="ps-note">Version is motor · colour · wheels · pack · Performance pack. Space is black. Periods are Polestar's own estimates, earliest first.</p>
+    <div class="ps-periods" data-draw="periods" data-source="periods by_delivery">—</div>
+  </section>
+</div>
+
+<script>
+  // Latest count per model (and both together), with the change since the check before.
+  dash.calc('latest', {
+    title: 'Latest count per model',
+    description: 'Cars deliverable by 31 Dec at the latest check, its change from the check before, and the total in stock.',
+    inputs: ['history'],
+    fn: (history) => {
+      const times = [...new Set(history.map((r) => r.checked_at))].sort();
+      const last = times[times.length - 1];
+      const prev = times[times.length - 2];
+      const at = (t, m) => history.find((r) => r.checked_at === t && r.model === m);
+      const out = ['Coupe', 'SUV'].map((m) => {
+        const a = at(last, m) || {};
+        const b = prev ? at(prev, m) : null;
+        return { model: m, by_deadline: a.by_deadline, total: a.total, change: b ? a.by_deadline - b.by_deadline : 0, checked_label: a.checked_label };
+      });
+      const all = { model: 'All', by_deadline: out[0].by_deadline + out[1].by_deadline, total: out[0].total + out[1].total, change: out[0].change + out[1].change, checked_label: out[0].checked_label };
+      return [...out, all];
+    },
+  });
+
+  // Cars per delivery period, per model.
+  dash.calc('periods', {
+    title: 'Cars per delivery period',
+    description: 'Current stock cars counted per model and delivery period, with the latest date in each period.',
+    inputs: ['cars'],
+    fn: (cars) => {
+      const g = new Map();
+      for (const c of cars) {
+        const key = `${c.model}|${c.delivery_period}`;
+        const r = g.get(key) || { key, model: c.model, delivery_period: c.delivery_period, cars: 0, first: c.estimated_delivery, last: c.estimated_delivery, by_deadline: true };
+        r.cars += 1;
+        if (c.estimated_delivery < r.first) r.first = c.estimated_delivery;
+        if (c.estimated_delivery > r.last) r.last = c.estimated_delivery;
+        if (!c.by_deadline) r.by_deadline = false;
+        g.set(key, r);
+      }
+      return [...g.values()].sort((a, b) => a.first.localeCompare(b.first));
+    },
+  });
+
+  // Cars per delivery period and version.
+  dash.calc('by_delivery', {
+    title: 'Cars per period and version',
+    description: 'Current stock cars counted per model, delivery period and version.',
+    inputs: ['cars'],
+    fn: (cars) => {
+      const g = new Map();
+      for (const c of cars) {
+        const key = `${c.model}|${c.delivery_period}|${c.version}`;
+        const r = g.get(key) || { key, model: c.model, delivery_period: c.delivery_period, version: c.version, cars: 0 };
+        r.cars += 1;
+        g.set(key, r);
+      }
+      return [...g.values()].sort((a, b) => b.cars - a.cars || a.version.localeCompare(b.version));
+    },
+  });
+
+  dash.setParams({ model: dash.params().model || 'Coupe' });
+
+  const enc = (v) => String(v).replace(/%/g, '%25').replace(/&/g, '%26').replace(/=/g, '%3D');
+  const latestRow = (m) => {
+    const d = dash.data('latest');
+    return d.status === 'ok' ? d.data.find((r) => r.model === m) : null;
+  };
+  const fail = (el, id) => {
+    if (dash.data(id).status === 'error') {
+      const s = document.createElement('div');
+      s.className = 'ps-fail';
+      s.textContent = 'Failed to load';
+      el.replaceChildren(s);
+      return true;
+    }
+    return false;
+  };
+
+  for (const id of ['sum-by', 'sum-total', 'checked']) {
+    const field = { 'sum-by': 'by_deadline', 'sum-total': 'total', checked: 'checked_label' }[id];
+    dash.draw(id, (el) => {
+      const r = latestRow('All');
+      el.textContent = r && r[field] != null ? String(r[field]) : '—';
+    });
+  }
+  dash.draw('by-model', (el) => {
+    const r = latestRow(el.dataset.model);
+    el.textContent = r && r.by_deadline != null ? String(r.by_deadline) : '—';
+  });
+  dash.draw('total-model', (el) => {
+    const r = latestRow(el.dataset.model);
+    el.textContent = r && r.total != null ? String(r.total) : '—';
+  });
+  dash.draw('delta', (el) => {
+    const r = latestRow(el.dataset.model);
+    el.classList.remove('up', 'down', 'flat');
+    if (!r) { el.textContent = '—'; el.classList.add('flat'); return; }
+    el.textContent = r.change > 0 ? `+${r.change}` : r.change < 0 ? `−${Math.abs(r.change)}` : '±0';
+    el.classList.add(r.change > 0 ? 'up' : r.change < 0 ? 'down' : 'flat');
+  });
+
+  dash.draw('changes', (tbody) => {
+    const d = dash.data('changes');
+    tbody.replaceChildren();
+    if (d.status !== 'ok') return;
+    const rows = [...d.data].sort((a, b) => b.checked_at.localeCompare(a.checked_at));
+    if (!rows.length) {
+      const tr = document.createElement('tr');
+      const td = document.createElement('td');
+      td.colSpan = 5;
+      td.textContent = 'No changes yet. The first ones show up after the next check.';
+      tr.appendChild(td);
+      tbody.appendChild(tr);
+      return;
+    }
+    for (const r of rows) {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.event_id;
+      for (const f of ['when', 'model', 'change', 'version', 'delivery']) {
+        const td = document.createElement('td');
+        if (f === 'change') {
+          const s = document.createElement('span');
+          s.className = `ps-pill ${r.event}`;
+          s.textContent = r.change;
+          td.appendChild(s);
+        } else td.textContent = r[f];
+        tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+  });
+
+  const fmtDay = (d) => d3.utcFormat('%-d %b')(new Date(d));
+  dash.draw('periods', (el) => {
+    if (fail(el, 'periods')) return;
+    const p = dash.data('periods');
+    const v = dash.data('by_delivery');
+    if (p.status !== 'ok' || v.status !== 'ok') { el.textContent = '—'; return; }
+    const model = dash.params().model || 'Coupe';
+    el.replaceChildren();
+    for (const per of p.data.filter((r) => r.model === model)) {
+      const box = document.createElement('div');
+      box.className = `ps-period${per.by_deadline ? '' : ' late'}`;
+      const head = document.createElement('div');
+      head.className = 'ps-period-head';
+      const name = document.createElement('span');
+      name.className = 'ps-period-name';
+      name.textContent = `${per.delivery_period} `;
+      const flag = document.createElement('span');
+      flag.className = `ps-flag ${per.by_deadline ? 'ok' : 'late'}`;
+      flag.textContent = per.by_deadline ? `· by ${fmtDay(per.last)}` : '· after 31 Dec';
+      name.appendChild(flag);
+      const n = document.createElement('span');
+      n.className = 'ps-period-n';
+      n.dataset.source = 'periods';
+      n.dataset.field = 'cars';
+      n.dataset.where = `key=${enc(per.key)}`;
+      n.textContent = String(per.cars);
+      head.append(name, n);
+      box.appendChild(head);
+      for (const r of v.data.filter((x) => x.model === model && x.delivery_period === per.delivery_period)) {
+        const line = document.createElement('div');
+        line.className = 'ps-v';
+        const a = document.createElement('span');
+        a.textContent = r.version;
+        const b = document.createElement('span');
+        b.dataset.source = 'by_delivery';
+        b.dataset.field = 'cars';
+        b.dataset.where = `key=${enc(r.key)}`;
+        b.textContent = String(r.cars);
+        line.append(a, b);
+        box.appendChild(line);
+      }
+      el.appendChild(box);
+    }
+  });
+
+  document.querySelectorAll('.ps-seg button').forEach((btn) => {
+    btn.addEventListener('click', () => dash.setParams({ model: btn.dataset.model }));
+  });
+  dash.onData(() => {
+    const m = dash.params().model || 'Coupe';
+    document.querySelectorAll('.ps-seg button').forEach((btn) => btn.setAttribute('aria-pressed', String(btn.dataset.model === m)));
+  });
+
+  dash.draw('trend', (el) => {
+    el.replaceChildren();
+    if (fail(el, 'history')) return;
+    const d = dash.data('history');
+    if (d.status !== 'ok' || !d.data.length) return;
+    const models = ['Coupe', 'SUV'];
+    const rows = d.data.map((r) => ({ ...r, t: new Date(r.checked_at), v: Number(r.by_deadline) }));
+    const W = Math.max(280, el.clientWidth || 600);
+    const H = 220;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const yMax = d3.max(rows, (r) => r.v) || 1;
+    const y = d3.scaleLinear([0, yMax * 1.15], [H - 24, 8]).nice();
+    // Measure the widest tick and end label to size the margins.
+    const probe = svg.append('text').attr('font-size', 12).text(String(y.domain()[1]));
+    const tickW = probe.node().getComputedTextLength();
+    probe.text('Coupe 000');
+    const endW = probe.node().getComputedTextLength();
+    probe.remove();
+    const m = { l: tickW + 10, r: endW + 10 };
+    const x = d3.scaleUtc(d3.extent(rows, (r) => r.t), [m.l, W - m.r]);
+    if (x.domain()[0].getTime() === x.domain()[1].getTime()) x.domain([d3.utcHour.offset(x.domain()[0], -1), d3.utcHour.offset(x.domain()[0], 1)]);
+    const grid = svg.append('g');
+    for (const tv of y.ticks(4)) {
+      grid.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(tv)).attr('y2', y(tv)).attr('stroke', 'var(--cds-chart-grid)');
+      grid.append('text').attr('x', m.l - 6).attr('y', y(tv)).attr('dy', '0.32em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(tv);
+    }
+    const span = x.domain()[1] - x.domain()[0];
+    const fmt = span < 2 * 864e5 ? d3.utcFormat('%H:%M') : d3.utcFormat('%-d %b');
+    const xt = x.ticks(Math.max(2, Math.floor((W - m.l - m.r) / 90)));
+    for (const tv of xt) {
+      svg.append('text').attr('x', x(tv)).attr('y', H - 4).attr('text-anchor', 'middle').attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(fmt(tv));
+    }
+    const ends = [];
+    models.forEach((mod, i) => {
+      const s = rows.filter((r) => r.model === mod).sort((a, b) => a.t - b.t);
+      if (!s.length) return;
+      svg.append('path').datum(s).attr('fill', 'none').attr('stroke', dash.colors[i]).attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
+        .attr('d', d3.line((r) => x(r.t), (r) => y(r.v)));
+      const last = s[s.length - 1];
+      svg.append('circle').attr('cx', x(last.t)).attr('cy', y(last.v)).attr('r', 3).attr('fill', dash.colors[i]);
+      ends.push({ mod, i, v: last.v, yy: y(last.v), xx: x(last.t) });
+    });
+    // Keep the two end labels from overlapping.
+    ends.sort((a, b) => a.yy - b.yy);
+    if (ends.length === 2 && ends[1].yy - ends[0].yy < 14) { const mid = (ends[0].yy + ends[1].yy) / 2; ends[0].yy = mid - 7; ends[1].yy = mid + 7; }
+    for (const e of ends) {
+      svg.append('text').attr('x', e.xx + 6).attr('y', e.yy).attr('dy', '0.32em').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(`${e.mod} ${e.v}`);
+    }
+    // Tooltip on the nearest check.
+    const tip = document.createElement('div');
+    tip.className = 'ps-tip';
+    tip.hidden = true;
+    el.appendChild(tip);
+    const times = [...new Set(rows.map((r) => +r.t))].sort((a, b) => a - b);
+    const rule = svg.append('line').attr('y1', 8).attr('y2', H - 24).attr('stroke', 'var(--cds-chart-reference)').attr('visibility', 'hidden');
+    svg.append('rect').attr('x', m.l).attr('y', 0).attr('width', Math.max(0, W - m.l - m.r)).attr('height', H).attr('fill', 'transparent')
+      .on('pointermove', (ev) => {
+        const [px] = d3.pointer(ev);
+        const t = times[d3.leastIndex(times, (tt) => Math.abs(x(tt) - px))];
+        rule.attr('x1', x(t)).attr('x2', x(t)).attr('visibility', 'visible');
+        const at = rows.filter((r) => +r.t === t);
+        tip.replaceChildren();
+        const h = document.createElement('div');
+        h.className = 't';
+        h.textContent = at[0] ? at[0].checked_label : '';
+        tip.appendChild(h);
+        models.forEach((mod, i) => {
+          const r = at.find((a) => a.model === mod);
+          if (!r) return;
+          const line = document.createElement('div');
+          const sw = document.createElement('i');
+          sw.style.background = dash.colors[i];
+          line.append(sw, `${mod}: ${r.v} of ${r.total}`);
+          tip.appendChild(line);
+        });
+        tip.hidden = false;
+        const scale = el.clientWidth / W;
+        const left = Math.min(Math.max(0, x(t) * scale + 10), el.clientWidth - tip.offsetWidth);
+        tip.style.left = `${left}px`;
+        tip.style.top = '8px';
+      })
+      .on('pointerleave', () => { tip.hidden = true; rule.attr('visibility', 'hidden'); });
+  });
+</script>
