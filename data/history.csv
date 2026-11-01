@@ -3,3 +3,5 @@ timestamp,deadline,model,total,before_deadline,after_deadline,unknown_delivery,s
 2026-11-01T07:17:58.065Z,2026-12-31,suv,80,31,49,0,json
 2026-11-01T07:25:25.458Z,2026-12-31,coupe,26,24,2,0,json
 2026-11-01T07:25:25.458Z,2026-12-31,suv,82,32,50,0,json
+2026-11-01T07:31:52.503Z,2026-12-31,coupe,26,24,2,0,json
+2026-11-01T07:31:52.503Z,2026-12-31,suv,82,32,50,0,json
