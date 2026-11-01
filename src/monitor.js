@@ -84,6 +84,26 @@ function bestDelivery(values, now) {
   return parsed.find((p) => p.kind === 'date') || parsed[0] || null;
 }
 
+// Polestar lists each car's options as content: [{featureType, name}],
+// and packs as bundles: [{name}].
+function carFeatures(car) {
+  const types = {};
+  for (const f of Array.isArray(car.content) ? car.content : []) {
+    if (f && f.featureType && f.name) types[f.featureType] = types[f.featureType] ? `${types[f.featureType]}, ${f.name}` : f.name;
+  }
+  const packs = (Array.isArray(car.bundles) ? car.bundles : []).map((b) => b && b.name).filter(Boolean);
+  return { types, packs, label: typeof car.earliestDeliveryDateLabel === 'string' ? car.earliestDeliveryDateLabel.trim() : null };
+}
+
+const VERSION_TYPE_RE = /motor|powertrain|drive|engine|version|variant|trim|performance|battery/i;
+
+function carVersion(features) {
+  if (!features) return 'Unknown version';
+  const parts = Object.entries(features.types).filter(([t]) => VERSION_TYPE_RE.test(t)).map(([, n]) => n);
+  if (features.packs.some((p) => /performance/i.test(p)) && !parts.some((p) => /performance/i.test(p))) parts.push('Performance');
+  return parts.length ? parts.join(' · ') : 'Unknown version';
+}
+
 function carsFromJson(bodies, now) {
   const cars = new Map();
   for (const { url, body } of bodies) {
@@ -96,7 +116,7 @@ function carsFromJson(bodies, now) {
           delivery_raw: values.map((v) => `${v.field}=${v.value}`).join('; '),
           parsed: bestDelivery(values, now),
           source_url: url,
-          raw: car,
+          features: carFeatures(car),
         };
       });
       // Real car lists have ids and readable dates; page text/translations don't.
@@ -286,6 +306,32 @@ function summarise(cars, deadline) {
   return { total: cars.length, before_deadline: before.length, after_deadline: after.length, unknown: unknown.length };
 }
 
+const NB_MONTHS = ['januar', 'februar', 'mars', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'desember'];
+
+// Groups cars by delivery period ("Tidlig desember 2026"), earliest first,
+// with a count per version inside each group.
+function breakdown(cars) {
+  const groups = new Map();
+  for (const c of cars) {
+    let period = 'Unknown delivery';
+    if (c.estimated_delivery) {
+      const [y, m] = c.estimated_delivery.split('-').map(Number);
+      const label = c.delivery_label || NB_MONTHS[m - 1];
+      period = `${label.charAt(0).toUpperCase()}${label.slice(1)} ${y}`;
+    }
+    const g = groups.get(period) || { period, earliest: null, latest: null, count: 0, before_deadline: true, versions: {} };
+    g.count++;
+    g.versions[c.version] = (g.versions[c.version] || 0) + 1;
+    if (c.estimated_delivery) {
+      if (!g.earliest || c.estimated_delivery < g.earliest) g.earliest = c.estimated_delivery;
+      if (!g.latest || c.estimated_delivery > g.latest) g.latest = c.estimated_delivery;
+    }
+    if (c.before_deadline !== true) g.before_deadline = false;
+    groups.set(period, g);
+  }
+  return [...groups.values()].sort((a, b) => (a.earliest || '9999').localeCompare(b.earliest || '9999'));
+}
+
 function iso(d) {
   return d.toISOString().slice(0, 10);
 }
@@ -327,11 +373,19 @@ async function main() {
           estimated_delivery: c.parsed ? iso(c.parsed.date) : null,
           estimate_kind: c.parsed ? c.parsed.kind : null,
           before_deadline: c.parsed ? c.parsed.date <= deadline : null,
+          delivery_label: c.features ? c.features.label : null,
+          version: carVersion(c.features),
+          packs: c.features ? c.features.packs : [],
+          features: c.features ? c.features.types : {},
         })),
       };
+      results[key].by_delivery = breakdown(results[key].cars);
       console.log(`  found ${r.cars.length} cars (json: ${r.jsonCount}, page: ${r.domCount}, using ${r.source})`);
       if (r.cars[0]) console.log(`  sample: ${r.cars[0].id} | ${r.cars[0].delivery_raw}`.slice(0, 400));
-      if (r.cars[0] && r.cars[0].raw) console.log(`  raw sample: ${JSON.stringify(r.cars[0].raw).slice(0, 6000)}`);
+      if (r.cars[0] && r.cars[0].features) {
+        const f = r.cars[0].features;
+        console.log(`  features: ${Object.entries(f.types).map(([t, n]) => `${t}=${n}`).join(' | ')} | packs=${f.packs.join(', ')}`.slice(0, 1500));
+      }
     }
   } finally {
     await browser.close();
@@ -356,9 +410,19 @@ async function main() {
     if (delta) changes.push(`${r.name}: ${prev.before_deadline} → **${r.before_deadline}** (${delta > 0 ? '+' : ''}${delta})`);
     lines.push(`| [${r.name}](${r.url}) | **${r.before_deadline}** | ${r.after_deadline} | ${r.unknown} | ${r.total} | ${delta == null ? '–' : (delta > 0 ? '+' : '') + delta} |`);
   }
+  for (const r of Object.values(results)) {
+    lines.push('', `### ${r.name}: by delivery`, '');
+    for (const g of r.by_delivery) {
+      const versions = Object.entries(g.versions).sort((a, b) => b[1] - a[1]).map(([v, n]) => `${v} **${n}**`).join(' · ');
+      const when = g.latest ? ` (by ${g.latest})` : '';
+      const late = g.before_deadline ? '' : ' — after deadline';
+      lines.push(`- **${g.period}**${when}: ${g.count} cars${late}`, `  - ${versions}`);
+    }
+  }
   lines.push('', `Checked ${stamp}.`);
   const summary = lines.join('\n');
   console.log('\n' + summary);
+  fs.writeFileSync(path.join(DATA_DIR, 'SUMMARY.md'), summary + '\n');
   if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary + '\n');
 
   if (changes.length) {
@@ -381,4 +445,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { carsFromJson, carsFromDom, findCarArrays, summarise };
+module.exports = { carsFromJson, carsFromDom, findCarArrays, summarise, breakdown, carVersion, carFeatures };
