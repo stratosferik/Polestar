@@ -95,14 +95,16 @@ function carFeatures(car) {
   return { types, packs, label: typeof car.earliestDeliveryDateLabel === 'string' ? car.earliestDeliveryDateLabel.trim() : null };
 }
 
-// Version = motor (Engine), plus "Performance" when that pack is included.
+// Version as you'd describe it from the page: motor · colour · Performance pack,
+// e.g. "Dual motor · Space · Performance".
 function carVersion(features) {
   if (!features) return 'Unknown version';
   const t = features.types;
   const engine = t.Engine || Object.entries(t).find(([k]) => /motor|engine|powertrain/i.test(k))?.[1];
+  const colour = t.Color || t.Colour;
   const hasPerf = [t.Packages, ...features.packs].some((x) => /performance/i.test(x || ''));
-  const parts = [engine, hasPerf && 'Performance'].filter(Boolean);
-  return parts.length ? parts.join(' ') : 'Unknown version';
+  const parts = [engine, colour, hasPerf && 'Performance'].filter(Boolean);
+  return parts.length ? parts.join(' · ') : 'Unknown version';
 }
 
 // Add the model year only to cars that differ from the usual one (e.g. a leftover 2026 car).
@@ -127,7 +129,6 @@ function carsFromJson(bodies, now) {
           parsed: bestDelivery(values, now),
           source_url: url,
           features: carFeatures(car),
-          scalars: Object.fromEntries(Object.entries(car).filter(([, v]) => v == null || typeof v !== 'object').map(([k, v]) => [k, typeof v === 'string' ? v.slice(0, 120) : v])),
         };
       });
       // Real car lists have ids and readable dates; page text/translations don't.
@@ -306,10 +307,6 @@ async function scrapeModel(browser, key, model, now) {
   if (useJson && domCars.length && domCars.length !== jsonCars.length) {
     console.warn(`  note: page shows ${domCars.length} cars, data has ${jsonCars.length}`);
   }
-  if (domCars[0]) console.log(`  card text: ${JSON.stringify((await Promise.resolve(domCardsRaw))[0]?.text || '').slice(0, 800)}`);
-  if (domCardsRaw[1]) console.log(`  card text 2: ${JSON.stringify(domCardsRaw[1].text).slice(0, 800)}`);
-  if (jsonCars[0]) console.log(`  data fields: ${JSON.stringify(jsonCars[0].scalars).slice(0, 1500)}`);
-  if (jsonCars[0]) console.log(`  feature types: ${JSON.stringify(jsonCars[0].features.types).slice(0, 2500)}`);
   return { source: useJson ? 'json' : domCars.length ? 'page' : 'none', cars: useJson ? jsonCars : domCars, jsonCount: jsonCars.length, domCount: domCars.length };
 }
 
@@ -431,10 +428,11 @@ async function main() {
   for (const r of Object.values(results)) {
     lines.push('', `### ${r.name}: by delivery`, '');
     for (const g of r.by_delivery) {
-      const versions = Object.entries(g.versions).sort((a, b) => b[1] - a[1]).map(([v, n]) => `${v} **${n}**`).join(' · ');
+      const versions = Object.entries(g.versions).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
       const when = g.latest ? ` (by ${g.latest})` : '';
       const late = g.before_deadline ? '' : ' — after deadline';
-      lines.push(`- **${g.period}**${when}: ${g.count} car${g.count === 1 ? '' : 's'}${late}`, `  - ${versions}`);
+      lines.push(`- **${g.period}**${when}: ${g.count} car${g.count === 1 ? '' : 's'}${late}`);
+      for (const [v, n] of versions) lines.push(`  - ${v}: **${n}**`);
     }
   }
   lines.push('', `Checked ${stamp}.`);

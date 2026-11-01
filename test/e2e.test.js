@@ -76,7 +76,7 @@ test('monitor counts cars from JSON and from page text', { skip: !canLaunch() &&
     assert.equal(coupe.source, 'json');
     assert.deepEqual([coupe.total, coupe.before_deadline, coupe.after_deadline, coupe.unknown], [14, 9, 5, 0]);
     assert.deepEqual(coupe.by_delivery.map((g) => [g.period, g.count, g.before_deadline]), [['Desember 2026', 9, true], ['Februar 2027', 5, false]]);
-    assert.deepEqual(coupe.by_delivery[0].versions, { 'Single motor Performance': 1, 'Dual motor': 4, 'Single motor (2026)': 1, 'Single motor': 3 });
+    assert.deepEqual(coupe.by_delivery[0].versions, { 'Single motor · Snow · Performance': 1, 'Dual motor · Snow': 4, 'Single motor · Snow (2026)': 1, 'Single motor · Snow': 3 });
     assert.ok(fs.readFileSync(path.join(dir, 'SUMMARY.md'), 'utf8').includes('Desember 2026'));
     assert.equal(suv.source, 'page');
     // "Uke 49" is relative to today, so only check the fixed ones.
