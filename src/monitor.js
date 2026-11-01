@@ -95,13 +95,23 @@ function carFeatures(car) {
   return { types, packs, label: typeof car.earliestDeliveryDateLabel === 'string' ? car.earliestDeliveryDateLabel.trim() : null };
 }
 
-const VERSION_TYPE_RE = /motor|powertrain|drive|engine|version|variant|trim|performance|battery/i;
-
+// Version = motor (Engine), plus "Performance" when that pack is included.
 function carVersion(features) {
   if (!features) return 'Unknown version';
-  const parts = Object.entries(features.types).filter(([t]) => VERSION_TYPE_RE.test(t)).map(([, n]) => n);
-  if (features.packs.some((p) => /performance/i.test(p)) && !parts.some((p) => /performance/i.test(p))) parts.push('Performance');
-  return parts.length ? parts.join(' · ') : 'Unknown version';
+  const t = features.types;
+  const engine = t.Engine || Object.entries(t).find(([k]) => /motor|engine|powertrain/i.test(k))?.[1];
+  const hasPerf = [t.Packages, ...features.packs].some((x) => /performance/i.test(x || ''));
+  const parts = [engine, hasPerf && 'Performance'].filter(Boolean);
+  return parts.length ? parts.join(' ') : 'Unknown version';
+}
+
+// Add the model year only to cars that differ from the usual one (e.g. a leftover 2026 car).
+function markOddModelYears(cars) {
+  const years = {};
+  cars.forEach((c) => c.model_year && (years[c.model_year] = (years[c.model_year] || 0) + 1));
+  const usual = Object.entries(years).sort((a, b) => b[1] - a[1])[0]?.[0];
+  for (const c of cars) if (c.model_year && c.model_year !== usual) c.version += ` (${c.model_year})`;
+  return cars;
 }
 
 function carsFromJson(bodies, now) {
@@ -375,10 +385,12 @@ async function main() {
           before_deadline: c.parsed ? c.parsed.date <= deadline : null,
           delivery_label: c.features ? c.features.label : null,
           version: carVersion(c.features),
+          model_year: c.features ? c.features.types.ModelYear || null : null,
           packs: c.features ? c.features.packs : [],
           features: c.features ? c.features.types : {},
         })),
       };
+      markOddModelYears(results[key].cars);
       results[key].by_delivery = breakdown(results[key].cars);
       console.log(`  found ${r.cars.length} cars (json: ${r.jsonCount}, page: ${r.domCount}, using ${r.source})`);
       if (r.cars[0]) console.log(`  sample: ${r.cars[0].id} | ${r.cars[0].delivery_raw}`.slice(0, 400));
@@ -416,7 +428,7 @@ async function main() {
       const versions = Object.entries(g.versions).sort((a, b) => b[1] - a[1]).map(([v, n]) => `${v} **${n}**`).join(' · ');
       const when = g.latest ? ` (by ${g.latest})` : '';
       const late = g.before_deadline ? '' : ' — after deadline';
-      lines.push(`- **${g.period}**${when}: ${g.count} cars${late}`, `  - ${versions}`);
+      lines.push(`- **${g.period}**${when}: ${g.count} car${g.count === 1 ? '' : 's'}${late}`, `  - ${versions}`);
     }
   }
   lines.push('', `Checked ${stamp}.`);
