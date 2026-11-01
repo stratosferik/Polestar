@@ -95,15 +95,19 @@ function carFeatures(car) {
   return { types, packs, label: typeof car.earliestDeliveryDateLabel === 'string' ? car.earliestDeliveryDateLabel.trim() : null };
 }
 
-// Version as you'd describe it from the page: motor · colour · Performance pack,
-// e.g. "Dual motor · Space · Performance".
+// Version as you'd describe it from the page:
+// motor · colour · wheels · Prime/Business · Performance,
+// e.g. "Dual motor · Space · 21\" Pro · Prime · Performance".
 function carVersion(features) {
   if (!features) return 'Unknown version';
   const t = features.types;
   const engine = t.Engine || Object.entries(t).find(([k]) => /motor|engine|powertrain/i.test(k))?.[1];
   const colour = t.Color || t.Colour;
+  const rims = t.Rims && t.Rims.replace(/''|”|″/g, '"');
+  // "Prime-pakken 2026" / "Prime pack" → "Prime"
+  const bundle = (t.Bundle || features.packs[0] || '').replace(/[-\s]*(pakken|pakke|pack)\b.*$/i, '').trim();
   const hasPerf = [t.Packages, ...features.packs].some((x) => /performance/i.test(x || ''));
-  const parts = [engine, colour, hasPerf && 'Performance'].filter(Boolean);
+  const parts = [engine, colour, rims, bundle, hasPerf && 'Performance'].filter(Boolean);
   return parts.length ? parts.join(' · ') : 'Unknown version';
 }
 

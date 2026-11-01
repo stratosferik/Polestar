@@ -15,7 +15,7 @@ A GitHub Action (`.github/workflows/monitor.yml`) runs 3 times a day. Each run:
 3. Counts cars due on or before the deadline, and writes:
    - `data/history.csv`: one row per model per run, to see the trend
    - `data/SUMMARY.md`: **latest counts, grouped by delivery period with a count per version**
-     (motor · colour · Performance pack, e.g. "Dual motor · Space · Performance"; Space = black)
+     (motor · colour · wheels · Prime/Business · Performance, e.g. "Dual motor · Space · 20\" Aero · Prime · Performance"; Space = black)
    - `data/latest.json`: every car with its delivery date, version, packs and options
    - a table in the run's summary page
 4. When the count changes, it comments on the issue **"Polestar 4 stock alerts"**, so GitHub notifies you.
