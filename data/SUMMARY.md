@@ -3,7 +3,7 @@
 | Model | Before deadline | After | Unknown | Total | Change |
 |---|---|---|---|---|---|
 | [Polestar 4 Coupe](https://www.polestar.com/no/stock-cars/polestar-4-coupe/) | **24** | 2 | 0 | 26 | – |
-| [Polestar 4 SUV](https://www.polestar.com/no/stock-cars/polestar-4-suv/) | **31** | 51 | 0 | 82 | – |
+| [Polestar 4 SUV](https://www.polestar.com/no/stock-cars/polestar-4-suv/) | **32** | 51 | 0 | 83 | – |
 
 ### Polestar 4 Coupe: by delivery
 
@@ -52,12 +52,13 @@
 - **Tidlig desember 2026** (by 2026-12-06): 2 cars
   - Dual motor · Aurora · 21" Plus · Prime: **1**
   - Dual motor · Ozone · 21" Plus · Prime: **1**
-- **Slutten av desember 2026** (by 2026-12-21): 10 cars
+- **Slutten av desember 2026** (by 2026-12-21): 11 cars
   - Dual motor · Lightning · 22" Performance · Prime · Performance: **3**
   - Dual motor · Stratus · 22" Performance · Prime · Performance: **3**
   - Dual motor · Space · 20" Aero · Business: **1**
   - Dual motor · Space · 20" Aero · Prime: **1**
   - Dual motor · Stratus · 20" Aero · Prime: **1**
+  - Dual motor · Stratus · 21" Plus · Prime: **1**
   - Dual motor · Stratus matte · 22" Performance · Prime · Performance: **1**
 - **Tidlig januar 2027** (by 2027-01-10): 33 cars — after deadline
   - Dual motor · Snow · 21" Plus · Prime: **5**
@@ -89,4 +90,4 @@
 - **Mars 2027** (by 2027-03-01): 1 car — after deadline
   - Dual motor · Stratus · 22" Performance · Prime · Performance: **1**
 
-Checked 2026-11-01T07:54:43.750Z.
+Checked 2026-11-01T16:32:07.321Z.
