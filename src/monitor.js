@@ -28,6 +28,7 @@ const DEBUG_DIR = process.env.DEBUG_DIR || path.join(ROOT, 'debug');
 const HISTORY_CSV = path.join(DATA_DIR, 'history.csv');
 const LATEST_JSON = path.join(DATA_DIR, 'latest.json');
 const CHANGE_MD = path.join(DEBUG_DIR, 'change.md');
+const CHANGES_CSV = path.join(DATA_DIR, 'changes.csv');
 
 const DELIVERY_KEY_RE = /deliver|leveranse|levering|eta\b|^eta|arrival|availab|readyDate|ready_date/i;
 const ID_KEYS = ['vin', 'VIN', 'id', 'stockId', 'stockCarId', 'carId', 'orderId', 'orderNumber', 'registrationNumber', 'uuid', 'key'];
@@ -349,6 +350,54 @@ function breakdown(cars) {
   return [...groups.values()].sort((a, b) => (a.earliest || '9999').localeCompare(b.earliest || '9999'));
 }
 
+// Compares this check with the previous one, car by car: cars that appeared,
+// disappeared or moved delivery date. A car only counts as gone after it is
+// missing from two checks in a row, since the site sometimes leaves one out.
+function diffCars(prevCars, cars, pending = []) {
+  const before = new Map((prevCars || []).map((c) => [c.id, c]));
+  const waiting = new Map((pending || []).map((c) => [c.id, c]));
+  const now = new Map(cars.map((c) => [c.id, c]));
+  const events = [];
+  for (const [id, c] of now) {
+    const p = before.get(id) || waiting.get(id);
+    if (!p) events.push({ event: 'added', car: c, from: '', to: c.estimated_delivery || '' });
+    else if ((p.estimated_delivery || '') !== (c.estimated_delivery || '')) {
+      events.push({ event: 'delivery_changed', car: c, from: p.estimated_delivery || '', to: c.estimated_delivery || '' });
+    }
+  }
+  for (const [id, p] of waiting) if (!now.has(id)) events.push({ event: 'removed', car: p, from: p.estimated_delivery || '', to: '' });
+  const stillPending = [...before.values()].filter((p) => !now.has(p.id));
+  return { events, pending: stillPending };
+}
+
+function csvCell(v) {
+  const s = v == null ? '' : String(v);
+  return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+}
+
+function logStockChanges(previous, results, stamp) {
+  const rows = [];
+  for (const [k, r] of Object.entries(results)) {
+    const prev = previous && previous.models && previous.models[k];
+    if (!prev || !Array.isArray(prev.cars)) continue;
+    // A much smaller list than last time is more likely a partial page load than a sell-out.
+    if (prev.cars.length >= 10 && r.cars.length < prev.cars.length * 0.7) {
+      console.warn(`  ${r.name}: ${prev.cars.length} → ${r.cars.length} cars, too big a drop to trust; not logging changes`);
+      continue;
+    }
+    const { events, pending } = diffCars(prev.cars, r.cars, prev.pending_removed);
+    r.pending_removed = pending;
+    for (const e of events) {
+      rows.push([stamp, k, e.event, e.car.id, e.car.version || '', e.car.delivery_label || '', e.from, e.to]);
+    }
+  }
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  if (!fs.existsSync(CHANGES_CSV)) fs.writeFileSync(CHANGES_CSV, 'timestamp,model,event,car_id,version,delivery_label,delivery_from,delivery_to\n');
+  if (rows.length) fs.appendFileSync(CHANGES_CSV, rows.map((r) => r.map(csvCell).join(',')).join('\n') + '\n');
+  console.log(`  stock changes since last check: ${rows.length}`);
+  return rows;
+}
+
 function iso(d) {
   return d.toISOString().slice(0, 10);
 }
@@ -411,6 +460,7 @@ async function main() {
   }
 
   const stamp = now.toISOString();
+  const stockEvents = logStockChanges(previous, results, stamp);
   const latest = { checked_at: stamp, deadline: iso(deadline), models: results };
   fs.writeFileSync(LATEST_JSON, JSON.stringify(latest, null, 2) + '\n');
   appendHistory(Object.entries(results).map(([k, r]) => [stamp, iso(deadline), k, r.total, r.before_deadline, r.after_deadline, r.unknown, r.source]));
@@ -465,4 +515,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { carsFromJson, carsFromDom, findCarArrays, summarise, breakdown, carVersion, carFeatures };
+module.exports = { diffCars, carsFromJson, carsFromDom, findCarArrays, summarise, breakdown, carVersion, carFeatures };
