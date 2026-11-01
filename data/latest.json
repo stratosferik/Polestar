@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-01T07:31:52.503Z",
+  "checked_at": "2026-11-01T07:37:23.888Z",
   "deadline": "2026-12-31",
   "models": {
     "coupe": {
@@ -18,7 +18,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Business pack"
           ],
@@ -43,7 +44,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -68,7 +70,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -93,7 +96,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Business pack"
           ],
@@ -118,7 +122,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor (2026)",
+          "model_year": "2026",
           "packs": [
             "Prime-pakken 2026"
           ],
@@ -143,7 +148,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Business pack"
           ],
@@ -168,7 +174,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -193,7 +200,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -218,7 +226,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -243,7 +252,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor (2026)",
+          "model_year": "2026",
           "packs": [
             "Prime-pakken 2026"
           ],
@@ -268,7 +278,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [],
           "features": {
             "Color": "Magnesium",
@@ -289,7 +300,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -314,7 +326,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -333,38 +346,14 @@
           }
         },
         {
-          "id": "814PBPP0L11936800P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-13",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "tidlig desember",
-          "version": "Rear motor · Bakhjulsdrift",
-          "packs": [
-            "Prime pack"
-          ],
-          "features": {
-            "Color": "Storm",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "20\" Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak",
-            "Bundle": "Prime pack",
-            "Model": "Polestar 4 coupé",
-            "Engine": "Rear motor",
-            "ModelYear": "2027",
-            "Drive": "Bakhjulsdrift",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "814PBPP0L11970700P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
           "estimated_delivery": "2026-12-13",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -383,13 +372,40 @@
           }
         },
         {
+          "id": "814PBPP0L11936800P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-13",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "tidlig desember",
+          "version": "Rear motor",
+          "model_year": "2027",
+          "packs": [
+            "Prime pack"
+          ],
+          "features": {
+            "Color": "Storm",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20\" Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak",
+            "Bundle": "Prime pack",
+            "Model": "Polestar 4 coupé",
+            "Engine": "Rear motor",
+            "ModelYear": "2027",
+            "Drive": "Bakhjulsdrift",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
           "id": "814PBPP0L11971700P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
           "estimated_delivery": "2026-12-13",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -414,7 +430,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -439,7 +456,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -464,7 +482,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -489,7 +508,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -514,7 +534,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -539,7 +560,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -564,7 +586,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -589,7 +612,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Rear motor · Bakhjulsdrift",
+          "version": "Rear motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -614,7 +638,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -639,7 +664,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
@@ -666,7 +692,8 @@
           "count": 10,
           "before_deadline": true,
           "versions": {
-            "Dual motor · Firehjulstrekk": 10
+            "Dual motor": 8,
+            "Dual motor (2026)": 2
           }
         },
         {
@@ -676,7 +703,7 @@
           "count": 1,
           "before_deadline": true,
           "versions": {
-            "Dual motor · Firehjulstrekk": 1
+            "Dual motor": 1
           }
         },
         {
@@ -686,8 +713,8 @@
           "count": 8,
           "before_deadline": true,
           "versions": {
-            "Rear motor · Bakhjulsdrift": 7,
-            "Dual motor · Firehjulstrekk": 1
+            "Rear motor": 7,
+            "Dual motor Performance": 1
           }
         },
         {
@@ -697,7 +724,7 @@
           "count": 5,
           "before_deadline": true,
           "versions": {
-            "Rear motor · Bakhjulsdrift": 5
+            "Rear motor": 5
           }
         },
         {
@@ -707,7 +734,7 @@
           "count": 1,
           "before_deadline": false,
           "versions": {
-            "Dual motor · Firehjulstrekk": 1
+            "Dual motor": 1
           }
         },
         {
@@ -717,7 +744,7 @@
           "count": 1,
           "before_deadline": false,
           "versions": {
-            "Dual motor · Firehjulstrekk": 1
+            "Dual motor Performance": 1
           }
         }
       ]
@@ -726,9 +753,9 @@
       "name": "Polestar 4 SUV",
       "url": "https://www.polestar.com/no/stock-cars/polestar-4-suv/",
       "source": "json",
-      "total": 82,
-      "before_deadline": 32,
-      "after_deadline": 50,
+      "total": 80,
+      "before_deadline": 31,
+      "after_deadline": 49,
       "unknown": 0,
       "cars": [
         {
@@ -738,7 +765,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -757,38 +785,14 @@
           }
         },
         {
-          "id": "815PAPP0E11937400P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Tønsberg",
-          "estimated_delivery": "2026-11-11",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Ozone",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "20'' Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937300P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
           "estimated_delivery": "2026-11-11",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -807,13 +811,40 @@
           }
         },
         {
+          "id": "815PAPP0E11937400P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Tønsberg",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "tidlig november",
+          "version": "Dual motor",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Ozone",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "Sotede ruter bak, Digitalt bakspeil",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
           "id": "815PAPP0E11937200P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
           "estimated_delivery": "2026-11-11",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -838,7 +869,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -863,7 +895,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -888,7 +921,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -913,7 +947,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -938,7 +973,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Business-pakken"
           ],
@@ -963,7 +999,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -988,7 +1025,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1013,7 +1051,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1038,7 +1077,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1063,7 +1103,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1088,7 +1129,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1113,7 +1155,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1138,7 +1181,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1163,7 +1207,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1188,7 +1233,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av november",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Business-pakken"
           ],
@@ -1213,7 +1259,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1238,7 +1285,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "tidlig desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1263,7 +1311,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Business-pakken"
           ],
@@ -1282,38 +1331,14 @@
           }
         },
         {
-          "id": "815PAPP0E11937100P01300      00000220001220002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-21",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Lightning",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "22\" Performance",
-            "Packages": "Komfort, Pilot, Plus, Performance",
-            "Option": "Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937300P01300      00000220001220002221002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
           "estimated_delivery": "2026-12-21",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1332,13 +1357,40 @@
           }
         },
         {
+          "id": "815PAPP0E11937100P01300      00000220001220002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-21",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Lightning",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Charcoal",
+            "Rims": "22\" Performance",
+            "Packages": "Komfort, Pilot, Plus, Performance",
+            "Option": "Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
           "id": "815PAPP0E11937100P01300      00000220001220002221002221010221011229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
           "estimated_delivery": "2026-12-21",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1363,7 +1415,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1388,7 +1441,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1413,7 +1467,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1438,7 +1493,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1463,7 +1519,8 @@
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1482,38 +1539,14 @@
           }
         },
         {
-          "id": "815PAPP0E11937300P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-21",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Stratus",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937300P01300      00000220001220002221002221010221011229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
           "estimated_delivery": "2026-12-21",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Slutten av desember",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1538,7 +1571,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1563,7 +1597,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1588,7 +1623,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1613,7 +1649,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1638,7 +1675,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1663,7 +1701,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1688,7 +1727,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1713,7 +1753,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1738,7 +1779,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1763,7 +1805,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1788,7 +1831,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1807,18 +1851,19 @@
           }
         },
         {
-          "id": "815PAPP0E11937500P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "id": "815PAPP0E11937100P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
           "estimated_delivery": "2027-01-08",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Aurora",
+            "Color": "Lightning",
             "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
             "Rims": "21'' Plus",
             "Packages": "Komfort, Pilot, Plus",
@@ -1832,18 +1877,19 @@
           }
         },
         {
-          "id": "815PAPP0E11937100P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "id": "815PAPP0E11937500P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
           "estimated_delivery": "2027-01-08",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Lightning",
+            "Color": "Aurora",
             "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
             "Rims": "21'' Plus",
             "Packages": "Komfort, Pilot, Plus",
@@ -1863,7 +1909,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1888,7 +1935,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1913,7 +1961,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1938,7 +1987,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1963,7 +2013,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -1988,7 +2039,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2013,7 +2065,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2038,7 +2091,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2063,7 +2117,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2088,7 +2143,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2113,7 +2169,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2138,7 +2195,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2163,7 +2221,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2188,7 +2247,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2207,38 +2267,14 @@
           }
         },
         {
-          "id": "815PAPP0E11970700P03200      00000220001220002221002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-10",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Snow",
-            "Upholstery": "Tailored Knit i fargen Mist med dekorpanaler i Zinc",
-            "Rims": "22\" Performance",
-            "Packages": "Komfort, Pilot, Plus, Performance",
-            "Option": "Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937200P01100      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
           "estimated_delivery": "2027-01-10",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2263,7 +2299,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2288,7 +2325,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2313,7 +2351,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig januar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2338,7 +2377,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2363,7 +2403,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2388,7 +2429,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2413,7 +2455,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2438,7 +2481,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2463,7 +2507,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2488,7 +2533,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2513,7 +2559,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2538,7 +2585,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2563,7 +2611,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2588,7 +2637,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2613,7 +2663,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2638,7 +2689,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2663,7 +2715,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2688,7 +2741,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2713,7 +2767,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "tidlig februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2738,7 +2793,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Februar",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2763,7 +2819,8 @@
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Mars",
-          "version": "Dual motor · Firehjulstrekk",
+          "version": "Dual motor Performance",
+          "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
@@ -2790,7 +2847,8 @@
           "count": 17,
           "before_deadline": true,
           "versions": {
-            "Dual motor · Firehjulstrekk": 17
+            "Dual motor": 16,
+            "Dual motor Performance": 1
           }
         },
         {
@@ -2800,7 +2858,7 @@
           "count": 2,
           "before_deadline": true,
           "versions": {
-            "Dual motor · Firehjulstrekk": 2
+            "Dual motor": 2
           }
         },
         {
@@ -2810,27 +2868,29 @@
           "count": 2,
           "before_deadline": true,
           "versions": {
-            "Dual motor · Firehjulstrekk": 2
+            "Dual motor": 2
           }
         },
         {
           "period": "Slutten av desember 2026",
           "earliest": "2026-12-18",
           "latest": "2026-12-21",
-          "count": 11,
+          "count": 10,
           "before_deadline": true,
           "versions": {
-            "Dual motor · Firehjulstrekk": 11
+            "Dual motor": 3,
+            "Dual motor Performance": 7
           }
         },
         {
           "period": "Tidlig januar 2027",
           "earliest": "2027-01-01",
           "latest": "2027-01-10",
-          "count": 32,
+          "count": 31,
           "before_deadline": false,
           "versions": {
-            "Dual motor · Firehjulstrekk": 32
+            "Dual motor": 29,
+            "Dual motor Performance": 2
           }
         },
         {
@@ -2840,7 +2900,7 @@
           "count": 2,
           "before_deadline": false,
           "versions": {
-            "Dual motor · Firehjulstrekk": 2
+            "Dual motor": 2
           }
         },
         {
@@ -2850,7 +2910,8 @@
           "count": 15,
           "before_deadline": false,
           "versions": {
-            "Dual motor · Firehjulstrekk": 15
+            "Dual motor": 14,
+            "Dual motor Performance": 1
           }
         },
         {
@@ -2860,7 +2921,7 @@
           "count": 1,
           "before_deadline": false,
           "versions": {
-            "Dual motor · Firehjulstrekk": 1
+            "Dual motor Performance": 1
           }
         }
       ]
