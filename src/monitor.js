@@ -96,6 +96,7 @@ function carsFromJson(bodies, now) {
           delivery_raw: values.map((v) => `${v.field}=${v.value}`).join('; '),
           parsed: bestDelivery(values, now),
           source_url: url,
+          raw: car,
         };
       });
       // Real car lists have ids and readable dates; page text/translations don't.
@@ -330,6 +331,7 @@ async function main() {
       };
       console.log(`  found ${r.cars.length} cars (json: ${r.jsonCount}, page: ${r.domCount}, using ${r.source})`);
       if (r.cars[0]) console.log(`  sample: ${r.cars[0].id} | ${r.cars[0].delivery_raw}`.slice(0, 400));
+      if (r.cars[0] && r.cars[0].raw) console.log(`  raw sample: ${JSON.stringify(r.cars[0].raw).slice(0, 6000)}`);
     }
   } finally {
     await browser.close();
