@@ -1,0 +1,518 @@
+{
+  "checked_at": "2026-11-01T07:12:52.785Z",
+  "deadline": "2026-12-31",
+  "models": {
+    "coupe": {
+      "name": "Polestar 4 Coupe",
+      "url": "https://www.polestar.com/no/stock-cars/polestar-4-coupe/",
+      "source": "json",
+      "total": 20,
+      "before_deadline": 20,
+      "after_deadline": 0,
+      "unknown": 0,
+      "cars": [
+        {
+          "id": "814PAPB0E11971700P04300      00000220002221010229002XCBL22XCOMFO-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig november hos alle lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPP0E11936800P04300      00000220002221010229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPP0E11936800P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPB0E11972900P04300      00000220002221010229002XCBL22XCOMFO-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Svolvær",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPP0E11972900P03200      00000220002221010229001A01446XPLUSS-2026-202517-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Sarpsborg",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPB0E11936800P04300      00000220002221010229002XCBL22XCOMFO-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPP0E11972900P04300      00000220002221001221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Trondheim",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPP0E11972900P04300      00000220002221010229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Svolvær",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPP0E11971700P04300      00000220002221010229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPP0E11970700P04300      00000220002221010229001A01446XPLUSS-2026-202517-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Haugesund",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPB0E11972900P04300      00000XCBL22-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av november; earliestDeliveryDate=2026-11-19T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av november hos alle lokasjoner",
+          "estimated_delivery": "2026-11-19",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PBPP0L11936800P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-13",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PBPP0L11972900P01100      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-13",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PBPP0L11970700P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-13",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PBPP0L11936800P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-13",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PAPP0E11972900P01100      00000220001220002221003221010221011221014229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-13",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PBPP0L11971700P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-13",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PBPP0L11972900P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-13",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PBPP0L11936900P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-13T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-13",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "814PBPP0L11971700P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true
+        }
+      ]
+    },
+    "suv": {
+      "name": "Polestar 4 SUV",
+      "url": "https://www.polestar.com/no/stock-cars/polestar-4-suv/",
+      "source": "json",
+      "total": 50,
+      "before_deadline": 30,
+      "after_deadline": 20,
+      "unknown": 0,
+      "cars": [
+        {
+          "id": "815PAPP0E11937100P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-09",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937400P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Tønsberg",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937300P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937200P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937200P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937100P01100      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11970700P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Tønsberg",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937300P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPB0E11937100P04300      00000220002221010229002XAEROWXCOMFO-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937100P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937100P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937500P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937500P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Åsane",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937200P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11970700P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937400P01100      00000220001220002221002221010221011229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937300P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig november; earliestDeliveryDate=2026-11-11T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-11-11",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937400P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av november; earliestDeliveryDate=2026-11-19T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av november hos alle lokasjoner",
+          "estimated_delivery": "2026-11-19",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPB0E11937300P04300      00000220002221010229002XAEROWXCOMFO-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av november; earliestDeliveryDate=2026-11-19T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av november hos alle lokasjoner",
+          "estimated_delivery": "2026-11-19",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937400P01100      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-06T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-06",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937500P02100      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig desember; earliestDeliveryDate=2026-12-06T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-06",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPB0E11937200P04300      00000220002221010229002XAEROWXCOMFO-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-18T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-18",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937100P01300      00000220001220002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-21",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937300P01300      00000220001220002221002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-21",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937100P01300      00000220001220002221002221010221011229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-21",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937300P01300      00000220001220002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-21",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937300P04300      00000220002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-21",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937200P04300      00000220002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-21",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937100P01300      00000220001220002221002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-21",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937300P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra Slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-21",
+          "estimate_kind": "date",
+          "before_deadline": true
+        },
+        {
+          "id": "815PAPP0E11937500P04300      00000220002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-06T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-06",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937500P04300      00000220002221002221003221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-06T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-06",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937100P04300      00000220002221002221003221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-06T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-06",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937100P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-08",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937500P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-08",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11970700P02100      00000220001220002221002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-08",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937200P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-08",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11970700P02100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-08",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937300P04300      00000220002221002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-08",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937200P04300      00000220002221002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-08",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937200P01100      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-10",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937300P01100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-10",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11970700P03200      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-10",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11970700P04300      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-10",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11970700P04300      00000220002221002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig januar; earliestDeliveryDate=2027-01-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-10",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937300P01100      00000220002221002221003221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Februar; earliestDeliveryDate=2027-02-03T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-03",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937400P01100      00000220002221002221003221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig februar; earliestDeliveryDate=2027-02-05T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-05",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937400P04300      00000220002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig februar; earliestDeliveryDate=2027-02-05T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-05",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937200P01100      00000220002221002221003221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig februar; earliestDeliveryDate=2027-02-05T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-05",
+          "estimate_kind": "date",
+          "before_deadline": false
+        },
+        {
+          "id": "815PAPP0E11937100P01100      00000220002221002221003221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=tidlig februar; earliestDeliveryDate=2027-02-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-08",
+          "estimate_kind": "date",
+          "before_deadline": false
+        }
+      ]
+    }
+  }
+}
