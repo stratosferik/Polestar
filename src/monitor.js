@@ -127,6 +127,7 @@ function carsFromJson(bodies, now) {
           parsed: bestDelivery(values, now),
           source_url: url,
           features: carFeatures(car),
+          scalars: Object.fromEntries(Object.entries(car).filter(([, v]) => v == null || typeof v !== 'object').map(([k, v]) => [k, typeof v === 'string' ? v.slice(0, 120) : v])),
         };
       });
       // Real car lists have ids and readable dates; page text/translations don't.
@@ -285,7 +286,8 @@ async function scrapeModel(browser, key, model, now) {
   console.log(`  car links on page after loading: ${linkCount}`);
 
   const jsonCars = carsFromJson(bodies, now);
-  const domCars = carsFromDom(await cardsFromDom(page), now);
+  const domCardsRaw = await cardsFromDom(page);
+  const domCars = carsFromDom(domCardsRaw, now);
 
   const dbg = path.join(DEBUG_DIR, key);
   fs.mkdirSync(dbg, { recursive: true });
@@ -304,6 +306,10 @@ async function scrapeModel(browser, key, model, now) {
   if (useJson && domCars.length && domCars.length !== jsonCars.length) {
     console.warn(`  note: page shows ${domCars.length} cars, data has ${jsonCars.length}`);
   }
+  if (domCars[0]) console.log(`  card text: ${JSON.stringify((await Promise.resolve(domCardsRaw))[0]?.text || '').slice(0, 800)}`);
+  if (domCardsRaw[1]) console.log(`  card text 2: ${JSON.stringify(domCardsRaw[1].text).slice(0, 800)}`);
+  if (jsonCars[0]) console.log(`  data fields: ${JSON.stringify(jsonCars[0].scalars).slice(0, 1500)}`);
+  if (jsonCars[0]) console.log(`  feature types: ${JSON.stringify(jsonCars[0].features.types).slice(0, 2500)}`);
   return { source: useJson ? 'json' : domCars.length ? 'page' : 'none', cars: useJson ? jsonCars : domCars, jsonCount: jsonCars.length, domCount: domCars.length };
 }
 
