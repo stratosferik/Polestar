@@ -180,33 +180,46 @@ function carsFromDom(cards, now) {
 // ---------- page interaction ----------
 
 async function clickFirst(page, re, timeout = 1500) {
-  const loc = page.getByRole('button', { name: re }).first();
-  try {
-    await loc.waitFor({ state: 'visible', timeout });
-    await loc.click({ timeout });
-    return true;
-  } catch {
-    return false;
+  const candidates = [
+    page.getByRole('button', { name: re }),
+    page.getByRole('link', { name: re }),
+    page.locator('button, a, [role="button"]').filter({ hasText: re }),
+  ];
+  for (const c of candidates) {
+    const loc = c.first();
+    try {
+      await loc.waitFor({ state: 'visible', timeout });
+      await loc.scrollIntoViewIfNeeded({ timeout });
+      await loc.click({ timeout });
+      return true;
+    } catch {}
   }
+  return false;
 }
+
+const LOAD_MORE_RE = /vis flere|last inn flere|se flere|vis mer|flere biler|show more|load more/i;
+
+// Number of car links on the page: grows as more cars are loaded.
+const carLinkCount = (page) =>
+  page.evaluate(() => new Set([...document.querySelectorAll('a[href*="/stock-cars/"]')].map((a) => a.href.split('?')[0])).size);
 
 async function loadAll(page) {
   await clickFirst(page, /godta alle|aksepter alle|accept all|tillat alle|godta|aksepter|accept/i, 8000);
   await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
-  for (let i = 0; i < 60; i++) {
+  let count = await carLinkCount(page);
+  let stale = 0;
+  // Stop after 3 rounds in a row where neither clicking nor scrolling adds cars.
+  for (let i = 0; i < 80 && stale < 3; i++) {
     await page.mouse.wheel(0, 20000);
-    await page.waitForTimeout(800);
-    const clicked = await clickFirst(page, /vis flere|last inn flere|se flere|vis mer|show more|load more/i, 1500);
-    if (!clicked) {
-      // One more scroll in case the list loads on scroll, then stop if nothing grows.
-      const h1 = await page.evaluate(() => document.body.scrollHeight);
-      await page.mouse.wheel(0, 20000);
-      await page.waitForTimeout(1500);
-      const h2 = await page.evaluate(() => document.body.scrollHeight);
-      if (h2 <= h1) break;
-    }
+    await page.waitForTimeout(1000);
+    await clickFirst(page, LOAD_MORE_RE, 2000);
     await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {});
+    await page.waitForTimeout(1500);
+    const now = await carLinkCount(page);
+    stale = now > count ? 0 : stale + 1;
+    count = now;
   }
+  return count;
 }
 
 async function scrapeModel(browser, key, model, now) {
@@ -237,7 +250,8 @@ async function scrapeModel(browser, key, model, now) {
     }
   }
 
-  await loadAll(page);
+  const linkCount = await loadAll(page);
+  console.log(`  car links on page after loading: ${linkCount}`);
 
   const jsonCars = carsFromJson(bodies, now);
   const domCars = carsFromDom(await cardsFromDom(page), now);
