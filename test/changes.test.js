@@ -22,3 +22,9 @@ test('new cars and moved delivery dates are logged', () => {
   const r = diffCars([car('a', '2026-12-01')], [car('a', '2026-12-20'), car('c', '2027-01-05')]);
   assert.deepEqual(r.events.map((e) => `${e.event}:${e.car.id}:${e.from}>${e.to}`), ['delivery_changed:a:2026-12-01>2026-12-20', 'added:c:>2027-01-05']);
 });
+
+test('small date creep is ignored, a move across the deadline is not', () => {
+  const prev = [{ id: 'a', estimated_delivery: '2026-11-11', before_deadline: true }, { id: 'b', estimated_delivery: '2026-12-29', before_deadline: true }];
+  const now = [{ id: 'a', estimated_delivery: '2026-11-12', before_deadline: true }, { id: 'b', estimated_delivery: '2027-01-01', before_deadline: false }];
+  assert.deepEqual(diffCars(prev, now).events.map((e) => `${e.event}:${e.car.id}`), ['delivery_changed:b']);
+});

@@ -353,6 +353,16 @@ function breakdown(cars) {
 // Compares this check with the previous one, car by car: cars that appeared,
 // disappeared or moved delivery date. A car only counts as gone after it is
 // missing from two checks in a row, since the site sometimes leaves one out.
+// Polestar's earliest dates creep forward a day at a time; only a move of a
+// week or more, or one across the deadline, counts as a change.
+function deliveryMoved(p, c) {
+  const a = p.estimated_delivery, b = c.estimated_delivery;
+  if (!a || !b) return (a || '') !== (b || '');
+  const days = Math.abs(Date.parse(b) - Date.parse(a)) / 864e5;
+  const crossed = p.before_deadline != null && c.before_deadline != null && p.before_deadline !== c.before_deadline;
+  return days >= 7 || crossed;
+}
+
 function diffCars(prevCars, cars, pending = []) {
   const before = new Map((prevCars || []).map((c) => [c.id, c]));
   const waiting = new Map((pending || []).map((c) => [c.id, c]));
@@ -361,7 +371,7 @@ function diffCars(prevCars, cars, pending = []) {
   for (const [id, c] of now) {
     const p = before.get(id) || waiting.get(id);
     if (!p) events.push({ event: 'added', car: c, from: '', to: c.estimated_delivery || '' });
-    else if ((p.estimated_delivery || '') !== (c.estimated_delivery || '')) {
+    else if (deliveryMoved(p, c)) {
       events.push({ event: 'delivery_changed', car: c, from: p.estimated_delivery || '', to: c.estimated_delivery || '' });
     }
   }
