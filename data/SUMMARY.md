@@ -2,19 +2,18 @@
 
 | Model | Before deadline | After | Unknown | Total | Change |
 |---|---|---|---|---|---|
-| [Polestar 4 Coupe](https://www.polestar.com/no/stock-cars/polestar-4-coupe/) | **23** | 1 | 0 | 24 | – |
+| [Polestar 4 Coupe](https://www.polestar.com/no/stock-cars/polestar-4-coupe/) | **22** | 1 | 0 | 23 | – |
 | [Polestar 4 SUV](https://www.polestar.com/no/stock-cars/polestar-4-suv/) | **44** | 25 | 0 | 69 | – |
 
 ### Polestar 4 Coupe: by delivery
 
-- **Slutten av november 2026** (by 2026-11-19): 10 cars
+- **Slutten av november 2026** (by 2026-11-20): 9 cars
   - Dual motor · Storm · 20" Aero · Prime: **2**
   - Dual motor · Magnesium · 20" Aero · Business: **1**
   - Dual motor · Magnesium · 20" Aero · Prime: **1**
   - Dual motor · Magnesium · 20" Aero · Prime (2026): **1**
   - Dual motor · Magnesium · 21" Sport · Prime: **1**
   - Dual motor · Snow · 20" Aero · Prime (2026): **1**
-  - Dual motor · Space · 20" Aero · Business: **1**
   - Dual motor · Space · 20" Aero · Prime: **1**
   - Dual motor · Storm · 20" Aero · Business: **1**
 - **Slutten av desember 2026** (by 2026-12-30): 13 cars
@@ -29,7 +28,7 @@
 
 ### Polestar 4 SUV: by delivery
 
-- **Slutten av november 2026** (by 2026-11-27): 23 cars
+- **Slutten av november 2026** (by 2026-11-28): 23 cars
   - Dual motor · Lightning · 20" Aero · Prime: **5**
   - Dual motor · Space · 20" Aero · Prime: **3**
   - Dual motor · Stratus · 20" Aero · Prime: **3**
@@ -44,8 +43,8 @@
   - Dual motor · Stratus · 20" Aero · Business: **1**
   - Dual motor · Stratus · 21" Plus · Prime: **1**
 - **Tidlig desember 2026** (by 2026-12-04): 19 cars
-  - Dual motor · Snow · 21" Plus · Prime: **4**
-  - Dual motor · Space · 21" Plus · Prime: **4**
+  - Dual motor · Space · 21" Plus · Prime: **5**
+  - Dual motor · Snow · 21" Plus · Prime: **3**
   - Dual motor · Aurora · 21" Plus · Prime: **2**
   - Dual motor · Snow · 20" Aero · Prime: **2**
   - Dual motor · Stratus · 21" Plus · Prime: **2**
@@ -80,4 +79,4 @@
   - Dual motor · Space · 20" Aero · Prime: **1**
   - Dual motor · Stratus · 20" Aero · Prime: **1**
 
-Checked 2026-11-09T13:59:36.030Z.
+Checked 2026-11-10T00:44:36.806Z.
