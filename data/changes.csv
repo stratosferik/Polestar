@@ -151,3 +151,4 @@ timestamp,model,event,car_id,version,delivery_label,delivery_from,delivery_to
 2026-11-12T22:46:41.031Z,coupe,added,814PAPB0E11971700P04300      00000220002221010229002XCBL22XCOMFO-2027-202617-nb-NO,"Dual motor · Space · 20"" Aero · Business",Slutten av november,,2026-11-22
 2026-11-12T22:46:41.031Z,suv,delivery_changed,815PAPB0E11937300P04300      00000220002221010229002XAEROWXCOMFO-2027-202630-nb-NO,"Dual motor · Stratus · 20"" Aero · Business",Slutten av november,2026-11-30,2026-11-22
 2026-11-12T22:46:41.031Z,suv,added,815PAPP0E11937300P01100      00000220001220002221002221010221011229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO,"Dual motor · Stratus · 22"" Performance · Prime · Performance",Slutten av januar,,2027-01-29
+2026-11-13T13:12:15.449Z,coupe,delivery_changed,814PAPP0E11970700P03200      00000220002221010229001A01446XPLUSS-2026-202517-nb-NO,"Dual motor · Snow · 20"" Aero · Prime (2026)",Slutten av desember,2026-12-04,2026-12-25
