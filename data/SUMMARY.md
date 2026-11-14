@@ -3,7 +3,7 @@
 | Model | Before deadline | After | Unknown | Total | Change |
 |---|---|---|---|---|---|
 | [Polestar 4 Coupe](https://www.polestar.com/no/stock-cars/polestar-4-coupe/) | **24** | 1 | 0 | 25 | – |
-| [Polestar 4 SUV](https://www.polestar.com/no/stock-cars/polestar-4-suv/) | **42** | 41 | 0 | 83 | – |
+| [Polestar 4 SUV](https://www.polestar.com/no/stock-cars/polestar-4-suv/) | **41** | 41 | 0 | 82 | – |
 
 ### Polestar 4 Coupe: by delivery
 
@@ -30,17 +30,16 @@
 
 ### Polestar 4 SUV: by delivery
 
-- **Slutten av november 2026** (by 2026-11-24): 17 cars
+- **Slutten av november 2026** (by 2026-11-24): 15 cars
   - Dual motor · Lightning · 20" Aero · Prime: **4**
   - Dual motor · Space · 20" Aero · Prime: **3**
   - Dual motor · Stratus · 20" Aero · Prime: **3**
-  - Dual motor · Aurora · 20" Aero · Prime: **2**
+  - Dual motor · Aurora · 20" Aero · Prime: **1**
   - Dual motor · Lightning · 20" Aero · Business: **1**
   - Dual motor · Ozone · 20" Aero · Prime: **1**
   - Dual motor · Ozone · 22" Performance · Prime · Performance: **1**
   - Dual motor · Snow · 20" Aero · Prime: **1**
-  - Dual motor · Stratus · 20" Aero · Business: **1**
-- **Tidlig desember 2026** (by 2026-12-04): 23 cars
+- **Tidlig desember 2026** (by 2026-12-04): 24 cars
   - Dual motor · Snow · 21" Plus · Prime: **4**
   - Dual motor · Stratus · 21" Plus · Prime: **4**
   - Dual motor · Space · 21" Plus · Prime: **3**
@@ -53,6 +52,7 @@
   - Dual motor · Snow · 22" Performance · Prime · Performance: **1**
   - Dual motor · Space · 20" Aero · Business: **1**
   - Dual motor · Space · 20" Aero · Prime: **1**
+  - Dual motor · Stratus · 20" Aero · Business: **1**
   - Dual motor · Stratus · 20" Aero · Prime: **1**
 - **Slutten av desember 2026** (by 2026-12-23): 2 cars
   - Dual motor · Lightning · 22" Performance · Prime · Performance: **1**
@@ -91,4 +91,4 @@
   - Dual motor · Snow · 21" Plus · Prime: **1**
   - Dual motor · Stratus · 21" Plus · Prime: **1**
 
-Checked 2026-11-14T12:17:15.090Z.
+Checked 2026-11-14T21:33:56.172Z.
