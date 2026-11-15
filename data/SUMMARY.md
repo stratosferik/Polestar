@@ -3,7 +3,7 @@
 | Model | Before deadline | After | Unknown | Total | Change |
 |---|---|---|---|---|---|
 | [Polestar 4 Coupe](https://www.polestar.com/no/stock-cars/polestar-4-coupe/) | **24** | 1 | 0 | 25 | – |
-| [Polestar 4 SUV](https://www.polestar.com/no/stock-cars/polestar-4-suv/) | **40** | 40 | 0 | 80 | – |
+| [Polestar 4 SUV](https://www.polestar.com/no/stock-cars/polestar-4-suv/) | **41** | 40 | 0 | 81 | – |
 
 ### Polestar 4 Coupe: by delivery
 
@@ -39,16 +39,16 @@
   - Dual motor · Ozone · 20" Aero · Prime: **1**
   - Dual motor · Ozone · 22" Performance · Prime · Performance: **1**
   - Dual motor · Snow · 20" Aero · Prime: **1**
-- **Tidlig desember 2026** (by 2026-12-04): 23 cars
+- **Tidlig desember 2026** (by 2026-12-04): 24 cars
   - Dual motor · Snow · 21" Plus · Prime: **4**
   - Dual motor · Stratus · 21" Plus · Prime: **4**
   - Dual motor · Space · 21" Plus · Prime: **3**
   - Dual motor · Lightning · 21" Plus · Prime: **2**
+  - Dual motor · Snow · 20" Aero · Prime: **2**
   - Dual motor · Aurora · 21" Plus · Prime: **1**
   - Dual motor · Lightning · 20" Aero · Prime: **1**
   - Dual motor · Ozone · 20" Aero · Prime: **1**
   - Dual motor · Ozone · 21" Plus · Prime: **1**
-  - Dual motor · Snow · 20" Aero · Prime: **1**
   - Dual motor · Snow · 22" Performance · Prime · Performance: **1**
   - Dual motor · Space · 20" Aero · Business: **1**
   - Dual motor · Space · 20" Aero · Prime: **1**
@@ -72,16 +72,16 @@
   - Dual motor · Space · 20" Aero · Prime: **2**
 - **Tidlig februar 2027** (by 2027-02-09): 15 cars — after deadline
   - Dual motor · Aurora · 20" Aero · Prime: **2**
+  - Dual motor · Ozone · 20" Aero · Prime: **2**
   - Dual motor · Space · 21" Plus · Prime: **2**
   - Dual motor · Stratus · 20" Aero · Prime: **2**
-  - Dual motor · Stratus · 22" Performance · Prime · Performance: **2**
   - Dual motor · Aurora · 21" Plus · Prime: **1**
   - Dual motor · Lightning · 20" Aero · Prime: **1**
   - Dual motor · Lightning · 22" Performance · Prime · Performance: **1**
-  - Dual motor · Ozone · 20" Aero · Prime: **1**
   - Dual motor · Snow · 20" Aero · Prime: **1**
   - Dual motor · Space · 20" Aero · Prime: **1**
   - Dual motor · Stratus · 21" Plus · Prime: **1**
+  - Dual motor · Stratus · 22" Performance · Prime · Performance: **1**
 - **Februar 2027** (by 2027-02-18): 9 cars — after deadline
   - Dual motor · Stratus · 20" Aero · Prime: **2**
   - Dual motor · Stratus · 22" Performance · Prime · Performance: **2**
@@ -91,4 +91,4 @@
   - Dual motor · Snow · 21" Plus · Prime: **1**
   - Dual motor · Stratus · 21" Plus · Prime: **1**
 
-Checked 2026-11-15T12:49:38.722Z.
+Checked 2026-11-15T21:53:18.772Z.
