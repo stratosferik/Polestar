@@ -1,20 +1,20 @@
 {
-  "checked_at": "2026-11-27T15:12:42.435Z",
+  "checked_at": "2026-11-28T00:36:04.633Z",
   "deadline": "2026-12-31",
   "models": {
     "coupe": {
       "name": "Polestar 4 Coupe",
       "url": "https://www.polestar.com/no/stock-cars/polestar-4-coupe/",
       "source": "json",
-      "total": 23,
+      "total": 21,
       "before_deadline": 9,
-      "after_deadline": 14,
+      "after_deadline": 12,
       "unknown": 0,
       "cars": [
         {
           "id": "814PAPB0E11971700P04300      00000220002221010229002XCBL22XCOMFO-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -39,8 +39,8 @@
         },
         {
           "id": "814PAPP0E11936800P04300      00000220002221010229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -64,35 +64,9 @@
           }
         },
         {
-          "id": "814PAPB0E11972900P04300      00000220002221010229002XCBL22XCOMFO-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Svolvær",
-          "estimated_delivery": "2026-12-07",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Magnesium · 20\" Aero · Business",
-          "model_year": "2027",
-          "packs": [
-            "Business pack"
-          ],
-          "features": {
-            "Color": "Magnesium",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "20\" Aero",
-            "Packages": "Komfort, Pilot",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak",
-            "Bundle": "Business pack",
-            "Model": "Polestar 4 coupé",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "814PAPP0E11972900P04300      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Trondheim",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Trondheim",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -117,8 +91,8 @@
         },
         {
           "id": "814PAPP0E11936800P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Sortland",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Sortland",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -142,9 +116,35 @@
           }
         },
         {
+          "id": "814PAPB0E11972900P04300      00000220002221010229002XCBL22XCOMFO-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Svolvær",
+          "estimated_delivery": "2026-12-08",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Tidlig desember",
+          "version": "Dual motor · Magnesium · 20\" Aero · Business",
+          "model_year": "2027",
+          "packs": [
+            "Business pack"
+          ],
+          "features": {
+            "Color": "Magnesium",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20\" Aero",
+            "Packages": "Komfort, Pilot",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak",
+            "Bundle": "Business pack",
+            "Model": "Polestar 4 coupé",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
           "id": "814PAPP0E11972900P04300      00000220002221001221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Trondheim",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Trondheim",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -169,8 +169,8 @@
         },
         {
           "id": "814PAPB0E11936800P04300      00000220002221010229002XCBL22XCOMFO-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Fredrikstad",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Fredrikstad",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -195,8 +195,8 @@
         },
         {
           "id": "814PAPP0E11972900P04300      00000220002221010229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Svolvær",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Svolvær",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -221,8 +221,8 @@
         },
         {
           "id": "814PAPP0E11971700P04300      00000220002221010229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -247,8 +247,8 @@
         },
         {
           "id": "814PBPP0L11936800P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig januar",
@@ -272,20 +272,20 @@
           }
         },
         {
-          "id": "814PBPP0L11936800P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
+          "id": "814PBPP0L11972900P01100      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig januar",
-          "version": "Rear motor · Storm · 20\" Aero · Prime",
+          "version": "Rear motor · Magnesium · 20\" Aero · Prime",
           "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
           "features": {
-            "Color": "Storm",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Color": "Magnesium",
+            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
             "Rims": "20\" Aero",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak",
@@ -299,8 +299,8 @@
         },
         {
           "id": "814PBPP0L11970700P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig januar",
@@ -324,61 +324,9 @@
           }
         },
         {
-          "id": "814PBPP0L11972900P01100      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "Tidlig januar",
-          "version": "Rear motor · Magnesium · 20\" Aero · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime pack"
-          ],
-          "features": {
-            "Color": "Magnesium",
-            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "20\" Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak",
-            "Bundle": "Prime pack",
-            "Model": "Polestar 4 coupé",
-            "Engine": "Rear motor",
-            "ModelYear": "2027",
-            "Drive": "Bakhjulsdrift",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "814PBPP0L11972900P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "Tidlig januar",
-          "version": "Rear motor · Magnesium · 20\" Aero · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime pack"
-          ],
-          "features": {
-            "Color": "Magnesium",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "20\" Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak",
-            "Bundle": "Prime pack",
-            "Model": "Polestar 4 coupé",
-            "Engine": "Rear motor",
-            "ModelYear": "2027",
-            "Drive": "Bakhjulsdrift",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "814PBPP0L11971700P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig januar",
@@ -402,35 +350,9 @@
           }
         },
         {
-          "id": "814PBPP0L11970700P01100      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "Tidlig januar",
-          "version": "Rear motor · Snow · 20\" Aero · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime pack"
-          ],
-          "features": {
-            "Color": "Snow",
-            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "20\" Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak",
-            "Bundle": "Prime pack",
-            "Model": "Polestar 4 coupé",
-            "Engine": "Rear motor",
-            "ModelYear": "2027",
-            "Drive": "Bakhjulsdrift",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "814PAPP0E11972900P01100      00000220001220002221003221010221011221014229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig januar",
@@ -454,19 +376,19 @@
           }
         },
         {
-          "id": "814PBPP0L11970700P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
+          "id": "814PBPP0L11972900P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig januar",
-          "version": "Rear motor · Snow · 20\" Aero · Prime",
+          "version": "Rear motor · Magnesium · 20\" Aero · Prime",
           "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
           "features": {
-            "Color": "Snow",
+            "Color": "Magnesium",
             "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
             "Rims": "20\" Aero",
             "Packages": "Komfort, Pilot, Plus",
@@ -480,9 +402,35 @@
           }
         },
         {
+          "id": "814PBPP0L11970700P01100      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Tidlig januar",
+          "version": "Rear motor · Snow · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime pack"
+          ],
+          "features": {
+            "Color": "Snow",
+            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
+            "Rims": "20\" Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak",
+            "Bundle": "Prime pack",
+            "Model": "Polestar 4 coupé",
+            "Engine": "Rear motor",
+            "ModelYear": "2027",
+            "Drive": "Bakhjulsdrift",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
           "id": "814PBPP0L11972900P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig januar",
@@ -506,19 +454,19 @@
           }
         },
         {
-          "id": "814PBPP0L11971700P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
+          "id": "814PBPP0L11970700P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig januar",
-          "version": "Rear motor · Space · 20\" Aero · Prime",
+          "version": "Rear motor · Snow · 20\" Aero · Prime",
           "model_year": "2027",
           "packs": [
             "Prime pack"
           ],
           "features": {
-            "Color": "Space",
+            "Color": "Snow",
             "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
             "Rims": "20\" Aero",
             "Packages": "Komfort, Pilot, Plus",
@@ -533,8 +481,8 @@
         },
         {
           "id": "814PBPP0L11936900P01100      00000220002221003221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig januar",
@@ -559,8 +507,8 @@
         },
         {
           "id": "814PBPP0L11971700P01100      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-08",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-09T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-09",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig januar",
@@ -613,15 +561,15 @@
       "by_delivery": [
         {
           "period": "Tidlig desember 2026",
-          "earliest": "2026-12-07",
-          "latest": "2026-12-07",
+          "earliest": "2026-12-08",
+          "latest": "2026-12-08",
           "count": 9,
           "before_deadline": true,
           "versions": {
             "Dual motor · Space · 20\" Aero · Business": 1,
             "Dual motor · Storm · 20\" Aero · Prime": 2,
-            "Dual motor · Magnesium · 20\" Aero · Business": 1,
             "Dual motor · Magnesium · 20\" Aero · Prime": 2,
+            "Dual motor · Magnesium · 20\" Aero · Business": 1,
             "Dual motor · Magnesium · 21\" Sport · Prime": 1,
             "Dual motor · Storm · 20\" Aero · Business": 1,
             "Dual motor · Space · 20\" Aero · Prime": 1
@@ -629,15 +577,15 @@
         },
         {
           "period": "Tidlig januar 2027",
-          "earliest": "2027-01-08",
-          "latest": "2027-01-08",
-          "count": 13,
+          "earliest": "2027-01-09",
+          "latest": "2027-01-09",
+          "count": 11,
           "before_deadline": false,
           "versions": {
-            "Rear motor · Storm · 20\" Aero · Prime": 2,
-            "Rear motor · Snow · 20\" Aero · Prime": 3,
+            "Rear motor · Storm · 20\" Aero · Prime": 1,
             "Rear motor · Magnesium · 20\" Aero · Prime": 3,
-            "Rear motor · Space · 20\" Aero · Prime": 3,
+            "Rear motor · Snow · 20\" Aero · Prime": 3,
+            "Rear motor · Space · 20\" Aero · Prime": 2,
             "Dual motor · Magnesium · 22\" Performance · Prime · Performance": 1,
             "Rear motor · Electron · 20\" Aero · Prime": 1
           }
@@ -653,21 +601,74 @@
           }
         }
       ],
-      "pending_removed": []
+      "pending_removed": [
+        {
+          "id": "814PBPP0L11936800P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-08",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Tidlig januar",
+          "version": "Rear motor · Storm · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime pack"
+          ],
+          "features": {
+            "Color": "Storm",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20\" Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak",
+            "Bundle": "Prime pack",
+            "Model": "Polestar 4 coupé",
+            "Engine": "Rear motor",
+            "ModelYear": "2027",
+            "Drive": "Bakhjulsdrift",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "814PBPP0L11971700P04300      00000220002221010221011229001XCBL22XCOMFOXPLUSS-2027-202617-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-08",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Tidlig januar",
+          "version": "Rear motor · Space · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime pack"
+          ],
+          "features": {
+            "Color": "Space",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20\" Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak",
+            "Bundle": "Prime pack",
+            "Model": "Polestar 4 coupé",
+            "Engine": "Rear motor",
+            "ModelYear": "2027",
+            "Drive": "Bakhjulsdrift",
+            "DeliveryDate": "DeliveryDate "
+          }
+        }
+      ]
     },
     "suv": {
       "name": "Polestar 4 SUV",
       "url": "https://www.polestar.com/no/stock-cars/polestar-4-suv/",
       "source": "json",
-      "total": 88,
+      "total": 89,
       "before_deadline": 45,
-      "after_deadline": 43,
+      "after_deadline": 44,
       "unknown": 0,
       "cars": [
         {
           "id": "815PAPP0E11937400P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Tønsberg",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Tønsberg",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -692,8 +693,8 @@
         },
         {
           "id": "815PAPP0E11937200P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -718,8 +719,8 @@
         },
         {
           "id": "815PAPP0E11937200P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -744,8 +745,8 @@
         },
         {
           "id": "815PAPP0E11937300P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -770,8 +771,8 @@
         },
         {
           "id": "815PAPB0E11937100P04300      00000220002221010229002XAEROWXCOMFO-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -796,8 +797,8 @@
         },
         {
           "id": "815PAPP0E11937100P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -821,9 +822,35 @@
           }
         },
         {
+          "id": "815PAPP0E11937100P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Tidlig desember",
+          "version": "Dual motor · Lightning · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Lightning",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
           "id": "815PAPP0E11937500P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Tromsø",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Tromsø",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -848,8 +875,8 @@
         },
         {
           "id": "815PAPP0E11937100P04300      00000220002221002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Sortland",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Sortland",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -874,8 +901,8 @@
         },
         {
           "id": "815PAPP0E11937200P01100      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Bodø",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Bodø",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -899,19 +926,45 @@
           }
         },
         {
-          "id": "815PAPP0E11937100P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "id": "815PAPP0E11937200P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Lightning · 20\" Aero · Prime",
+          "version": "Dual motor · Space · 20\" Aero · Prime",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Lightning",
+            "Color": "Space",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937300P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Tidlig desember",
+          "version": "Dual motor · Stratus · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Stratus",
             "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
             "Rims": "20'' Aero",
             "Packages": "Komfort, Pilot, Plus",
@@ -926,8 +979,8 @@
         },
         {
           "id": "815PAPP0E11937400P01100      00000220001220002221002221010221011229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Svolvær",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig kun hos Polestar Svolvær",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -952,8 +1005,8 @@
         },
         {
           "id": "815PAPB0E11937300P04300      00000220002221010229002XAEROWXCOMFO-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -977,35 +1030,9 @@
           }
         },
         {
-          "id": "815PAPP0E11937200P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Space · 20\" Aero · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Space",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "20'' Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937300P01100      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-08T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
+          "estimated_delivery": "2026-12-08",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
@@ -1029,20 +1056,72 @@
           }
         },
         {
-          "id": "815PAPP0E11937300P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-07T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig nå på utvalgte lokasjoner",
-          "estimated_delivery": "2026-12-07",
+          "id": "815PAPP0E11937100P01100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Stratus · 20\" Aero · Prime",
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Lightning · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Stratus",
+            "Color": "Lightning",
+            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
+            "Rims": "21'' Plus",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937100P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Lightning · 21\" Plus · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Lightning",
             "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "21'' Plus",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937100P03200      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Lightning · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Lightning",
+            "Upholstery": "Tailored Knit i fargen Mist med dekorpanaler i Zinc",
             "Rims": "20'' Aero",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "Sotede ruter bak",
@@ -1056,11 +1135,11 @@
         },
         {
           "id": "815PAPP0E11937200P03200      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Space · 20\" Aero · Prime",
           "model_year": "2027",
           "packs": [
@@ -1081,12 +1160,38 @@
           }
         },
         {
-          "id": "815PAPP0E11937500P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "id": "815PAPP0E11937300P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Stratus · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Stratus",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937500P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Aurora · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
@@ -1107,21 +1212,21 @@
           }
         },
         {
-          "id": "815PAPP0E11937100P01100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "id": "815PAPP0E11970700P01100      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Lightning · 21\" Plus · Prime",
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Snow · 20\" Aero · Prime",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Lightning",
+            "Color": "Snow",
             "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "21'' Plus",
+            "Rims": "20'' Aero",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "Sotede ruter bak",
             "Bundle": "Prime-pakken",
@@ -1133,12 +1238,12 @@
           }
         },
         {
-          "id": "815PAPP0E11937100P03200      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "id": "815PAPP0E11937100P01100      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Lightning · 20\" Aero · Prime",
           "model_year": "2027",
           "packs": [
@@ -1146,88 +1251,10 @@
           ],
           "features": {
             "Color": "Lightning",
-            "Upholstery": "Tailored Knit i fargen Mist med dekorpanaler i Zinc",
+            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
             "Rims": "20'' Aero",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "815PAPP0E11937100P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Lightning · 21\" Plus · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Lightning",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "815PAPP0E11937300P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Stratus · 20\" Aero · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Stratus",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "20'' Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "815PAPP0E11970700P02100      00000220001220002221002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Snow · 22\" Performance · Prime · Performance",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Snow",
-            "Upholstery": "Bridge of Weir skinn i Zinc med dekorpaneler i Charcoal",
-            "Rims": "22\" Performance",
-            "Packages": "Komfort, Pilot, Plus, Performance",
-            "Option": "Sotede ruter bak, Digitalt bakspeil",
             "Bundle": "Prime-pakken",
             "Model": "Polestar 4 SUV",
             "Engine": "Dual motor",
@@ -1238,11 +1265,11 @@
         },
         {
           "id": "815PAPP0E11937200P04300      00000220002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Space · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
@@ -1263,38 +1290,12 @@
           }
         },
         {
-          "id": "815PAPP0E11937100P01100      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Lightning · 20\" Aero · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Lightning",
-            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "20'' Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937200P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Space · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
@@ -1315,48 +1316,22 @@
           }
         },
         {
-          "id": "815PAPP0E11937300P04300      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "id": "815PAPP0E11970700P02100      00000220001220002221002221010229001XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Stratus · 21\" Plus · Prime",
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Snow · 22\" Performance · Prime · Performance",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Stratus",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "815PAPP0E11937300P04300      00000220002221002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Stratus · 21\" Plus · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Stratus",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
+            "Color": "Snow",
+            "Upholstery": "Bridge of Weir skinn i Zinc med dekorpaneler i Charcoal",
+            "Rims": "22\" Performance",
+            "Packages": "Komfort, Pilot, Plus, Performance",
             "Option": "Sotede ruter bak, Digitalt bakspeil",
             "Bundle": "Prime-pakken",
             "Model": "Polestar 4 SUV",
@@ -1367,71 +1342,19 @@
           }
         },
         {
-          "id": "815PAPP0E11970700P02100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "id": "815PAPP0E11937300P04300      00000220002221002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Snow · 21\" Plus · Prime",
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Stratus · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Snow",
-            "Upholstery": "Bridge of Weir skinn i Zinc med dekorpaneler i Charcoal",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "815PAPP0E11970700P03200      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Snow · 21\" Plus · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Snow",
-            "Upholstery": "Tailored Knit i fargen Mist med dekorpanaler i Zinc",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "815PAPP0E11937200P04300      00000220002221002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Space · 21\" Plus · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Space",
+            "Color": "Stratus",
             "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
             "Rims": "21'' Plus",
             "Packages": "Komfort, Pilot, Plus",
@@ -1446,11 +1369,11 @@
         },
         {
           "id": "815PAPP0E11937200P04300      00000220002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Space · 20\" Aero · Prime",
           "model_year": "2027",
           "packs": [
@@ -1471,64 +1394,12 @@
           }
         },
         {
-          "id": "815PAPP0E11970700P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Snow · 21\" Plus · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Snow",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "815PAPP0E11937200P01100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Space · 21\" Plus · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Space",
-            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937300P01100      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Stratus · 20\" Aero · Prime",
           "model_year": "2027",
           "packs": [
@@ -1549,20 +1420,46 @@
           }
         },
         {
-          "id": "815PAPP0E11937400P01100      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "id": "815PAPP0E11970700P02100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Ozone · 21\" Plus · Prime",
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Snow · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Ozone",
-            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
+            "Color": "Snow",
+            "Upholstery": "Bridge of Weir skinn i Zinc med dekorpaneler i Charcoal",
+            "Rims": "21'' Plus",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937300P04300      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Stratus · 21\" Plus · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Stratus",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
             "Rims": "21'' Plus",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
@@ -1575,12 +1472,90 @@
           }
         },
         {
-          "id": "815PAPP0E11937300P01100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "id": "815PAPP0E11937200P04300      00000220002221002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Space · 21\" Plus · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Space",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "21'' Plus",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "Sotede ruter bak, Digitalt bakspeil",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11970700P03200      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Snow · 21\" Plus · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Snow",
+            "Upholstery": "Tailored Knit i fargen Mist med dekorpanaler i Zinc",
+            "Rims": "21'' Plus",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937200P01100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Space · 21\" Plus · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Space",
+            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
+            "Rims": "21'' Plus",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937300P01100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Stratus · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
@@ -1601,38 +1576,12 @@
           }
         },
         {
-          "id": "815PAPP0E11970700P03200      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Snow · 20\" Aero · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Snow",
-            "Upholstery": "Tailored Knit i fargen Mist med dekorpanaler i Zinc",
-            "Rims": "20'' Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937300P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Stratus · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
@@ -1654,11 +1603,11 @@
         },
         {
           "id": "815PAPP0E11937400P04300      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Ozone · 20\" Aero · Prime",
           "model_year": "2027",
           "packs": [
@@ -1679,20 +1628,20 @@
           }
         },
         {
-          "id": "815PAPP0E11970700P04300      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "id": "815PAPP0E11937400P01100      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Snow · 21\" Plus · Prime",
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Ozone · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Snow",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Color": "Ozone",
+            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
             "Rims": "21'' Plus",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
@@ -1705,12 +1654,38 @@
           }
         },
         {
-          "id": "815PAPP0E11970700P04300      00000220002221002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "id": "815PAPP0E11970700P03200      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Snow · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Snow",
+            "Upholstery": "Tailored Knit i fargen Mist med dekorpanaler i Zinc",
+            "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11970700P04300      00000220002221002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Snow · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
@@ -1731,38 +1706,12 @@
           }
         },
         {
-          "id": "815PAPP0E11937200P04300      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
-          "estimate_kind": "date",
-          "before_deadline": true,
-          "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Space · 21\" Plus · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Space",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937100P04300      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Lightning · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
@@ -1783,12 +1732,64 @@
           }
         },
         {
-          "id": "815PAPP0E11937500P01100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "id": "815PAPP0E11937200P04300      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Space · 21\" Plus · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Space",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "21'' Plus",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11970700P04300      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
+          "version": "Dual motor · Snow · 21\" Plus · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Snow",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "21'' Plus",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937500P01100      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
+          "estimate_kind": "date",
+          "before_deadline": true,
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Aurora · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
@@ -1810,11 +1811,11 @@
         },
         {
           "id": "815PAPB0E11937200P04300      00000220002221010229002XAEROWXCOMFO-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
-          "estimated_delivery": "2026-12-15",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av desember; earliestDeliveryDate=2026-12-16T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av desember hos alle lokasjoner",
+          "estimated_delivery": "2026-12-16",
           "estimate_kind": "date",
           "before_deadline": true,
-          "delivery_label": "Tidlig desember",
+          "delivery_label": "Slutten av desember",
           "version": "Dual motor · Space · 20\" Aero · Business",
           "model_year": "2027",
           "packs": [
@@ -1939,32 +1940,6 @@
           }
         },
         {
-          "id": "815PAPP0E11937100P01100      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-06T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-06",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "Tidlig januar",
-          "version": "Dual motor · Lightning · 21\" Plus · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Lightning",
-            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937400P04300      00000220002221002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-06T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
           "estimated_delivery": "2027-01-06",
@@ -1980,6 +1955,32 @@
             "Color": "Ozone",
             "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
             "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937100P01100      00000220002221002221010221011223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig januar; earliestDeliveryDate=2027-01-06T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-06",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Tidlig januar",
+          "version": "Dual motor · Lightning · 21\" Plus · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Lightning",
+            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
+            "Rims": "21'' Plus",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
             "Bundle": "Prime-pakken",
@@ -2121,32 +2122,6 @@
           }
         },
         {
-          "id": "815PAPP0E11937200P01100      00000220002221002221003221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel= Slutten av januar; earliestDeliveryDate=2027-01-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av januar hos alle lokasjoner",
-          "estimated_delivery": "2027-01-21",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "Slutten av januar",
-          "version": "Dual motor · Space · 20\" Aero · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Space",
-            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "20'' Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Elektrokromatisk panoramatak, Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937100P04300      00000220002221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel= Slutten av januar; earliestDeliveryDate=2027-01-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av januar hos alle lokasjoner",
           "estimated_delivery": "2027-01-21",
@@ -2164,6 +2139,32 @@
             "Rims": "20'' Aero",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937200P01100      00000220002221002221003221010221011229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel= Slutten av januar; earliestDeliveryDate=2027-01-21T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra slutten av januar hos alle lokasjoner",
+          "estimated_delivery": "2027-01-21",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Slutten av januar",
+          "version": "Dual motor · Space · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Space",
+            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
+            "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Elektrokromatisk panoramatak, Sotede ruter bak, Digitalt bakspeil",
             "Bundle": "Prime-pakken",
             "Model": "Polestar 4 SUV",
             "Engine": "Dual motor",
@@ -2277,6 +2278,58 @@
           }
         },
         {
+          "id": "815PAPP0E11937300P01300      00000220001220002221002221010221011229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-02T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-02",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Tidlig februar",
+          "version": "Dual motor · Stratus · 22\" Performance · Prime · Performance",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Stratus",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Charcoal",
+            "Rims": "22\" Performance",
+            "Packages": "Komfort, Pilot, Plus, Performance",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPB0E11937100P04300      00000220002221010229002XAEROWXCBL22XCOMFO-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-02T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-02",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Tidlig februar",
+          "version": "Dual motor · Lightning · 20\" Aero · Business",
+          "model_year": "2027",
+          "packs": [
+            "Business-pakken"
+          ],
+          "features": {
+            "Color": "Lightning",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak",
+            "Bundle": "Business-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
           "id": "815PAPP0E11937100P04300      00000220002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-02T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
           "estimated_delivery": "2027-02-02",
@@ -2303,23 +2356,23 @@
           }
         },
         {
-          "id": "815PAPP0E11937300P01300      00000220001220002221002221010221011229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-02T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
-          "estimated_delivery": "2027-02-02",
+          "id": "815PAPP0E11937400P04300      00000220002221010223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-10",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig februar",
-          "version": "Dual motor · Stratus · 22\" Performance · Prime · Performance",
+          "version": "Dual motor · Ozone · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Stratus",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "22\" Performance",
-            "Packages": "Komfort, Pilot, Plus, Performance",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), 22 kW AC lading, Sotede ruter bak, Digitalt bakspeil",
+            "Color": "Ozone",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "21'' Plus",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak",
             "Bundle": "Prime-pakken",
             "Model": "Polestar 4 SUV",
             "Engine": "Dual motor",
@@ -2381,6 +2434,32 @@
           }
         },
         {
+          "id": "815PAPP0E11937300P04300      00000220002221002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-10",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Tidlig februar",
+          "version": "Dual motor · Stratus · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Stratus",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak, Digitalt bakspeil",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
           "id": "815PAPP0E11937300P01100      00000220002221010223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
           "estimated_delivery": "2027-02-10",
@@ -2395,32 +2474,6 @@
           "features": {
             "Color": "Stratus",
             "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "815PAPP0E11937400P04300      00000220002221010223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
-          "estimated_delivery": "2027-02-10",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "Tidlig februar",
-          "version": "Dual motor · Ozone · 21\" Plus · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Ozone",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
             "Rims": "21'' Plus",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak",
@@ -2459,22 +2512,22 @@
           }
         },
         {
-          "id": "815PAPP0E11937300P04300      00000220002221002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "id": "815PAPP0E11937400P01300      00000220001220002221002221010229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
           "estimated_delivery": "2027-02-10",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig februar",
-          "version": "Dual motor · Stratus · 20\" Aero · Prime",
+          "version": "Dual motor · Ozone · 22\" Performance · Prime · Performance",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Stratus",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "20'' Aero",
-            "Packages": "Komfort, Pilot, Plus",
+            "Color": "Ozone",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Charcoal",
+            "Rims": "22\" Performance",
+            "Packages": "Komfort, Pilot, Plus, Performance",
             "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak, Digitalt bakspeil",
             "Bundle": "Prime-pakken",
             "Model": "Polestar 4 SUV",
@@ -2498,32 +2551,6 @@
           ],
           "features": {
             "Color": "Stratus",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "22\" Performance",
-            "Packages": "Komfort, Pilot, Plus, Performance",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "815PAPP0E11937400P01300      00000220001220002221002221010229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
-          "estimated_delivery": "2027-02-10",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "Tidlig februar",
-          "version": "Dual motor · Ozone · 22\" Performance · Prime · Performance",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Ozone",
             "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Charcoal",
             "Rims": "22\" Performance",
             "Packages": "Komfort, Pilot, Plus, Performance",
@@ -2615,6 +2642,32 @@
           }
         },
         {
+          "id": "815PAPP0E11970700P01100      00000220002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-10",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Tidlig februar",
+          "version": "Dual motor · Snow · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Snow",
+            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
+            "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
           "id": "815PAPP0E11937500P01100      00000220002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
           "estimated_delivery": "2027-02-10",
@@ -2667,21 +2720,21 @@
           }
         },
         {
-          "id": "815PAPP0E11970700P01100      00000220002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "id": "815PAPP0E11937300P04300      00000220002221010223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
           "estimated_delivery": "2027-02-10",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig februar",
-          "version": "Dual motor · Snow · 20\" Aero · Prime",
+          "version": "Dual motor · Stratus · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Snow",
-            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "20'' Aero",
+            "Color": "Stratus",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "21'' Plus",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak",
             "Bundle": "Prime-pakken",
@@ -2719,58 +2772,6 @@
           }
         },
         {
-          "id": "815PAPP0E11937300P04300      00000220002221010223010229001XCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
-          "estimated_delivery": "2027-02-10",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "Tidlig februar",
-          "version": "Dual motor · Stratus · 21\" Plus · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Stratus",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "21'' Plus",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
-          "id": "815PAPP0E11937300P01100      00000220001220002221002221010229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
-          "estimated_delivery": "2027-02-10",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "Tidlig februar",
-          "version": "Dual motor · Stratus · 22\" Performance · Prime · Performance",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Stratus",
-            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "22\" Performance",
-            "Packages": "Komfort, Pilot, Plus, Performance",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937300P01100      00000220002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
           "estimated_delivery": "2027-02-10",
@@ -2797,19 +2798,19 @@
           }
         },
         {
-          "id": "815PAPP0E11937500P01100      00000220001220002221002221010229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "id": "815PAPP0E11937300P01100      00000220001220002221002221010229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
           "estimated_delivery": "2027-02-10",
           "estimate_kind": "date",
           "before_deadline": false,
           "delivery_label": "Tidlig februar",
-          "version": "Dual motor · Aurora · 22\" Performance · Prime · Performance",
+          "version": "Dual motor · Stratus · 22\" Performance · Prime · Performance",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
-            "Color": "Aurora",
+            "Color": "Stratus",
             "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
             "Rims": "22\" Performance",
             "Packages": "Komfort, Pilot, Plus, Performance",
@@ -2849,6 +2850,32 @@
           }
         },
         {
+          "id": "815PAPP0E11937500P01100      00000220001220002221002221010229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
+          "estimated_delivery": "2027-02-10",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Tidlig februar",
+          "version": "Dual motor · Aurora · 22\" Performance · Prime · Performance",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Aurora",
+            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
+            "Rims": "22\" Performance",
+            "Packages": "Komfort, Pilot, Plus, Performance",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak, Digitalt bakspeil",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
           "id": "815PAPP0E11937500P01300      00000220001220002221002221010229001XCBL22XCOMFOXPFWHEXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig februar; earliestDeliveryDate=2027-02-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig februar hos alle lokasjoner",
           "estimated_delivery": "2027-02-10",
@@ -2875,32 +2902,6 @@
           }
         },
         {
-          "id": "815PAPP0E11937500P04300      00000220002221002221003221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
-          "delivery_raw": "earliestDeliveryDateLabel=Tidlig mars; earliestDeliveryDate=2027-03-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig mars hos alle lokasjoner",
-          "estimated_delivery": "2027-03-10",
-          "estimate_kind": "date",
-          "before_deadline": false,
-          "delivery_label": "Tidlig mars",
-          "version": "Dual motor · Aurora · 20\" Aero · Prime",
-          "model_year": "2027",
-          "packs": [
-            "Prime-pakken"
-          ],
-          "features": {
-            "Color": "Aurora",
-            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
-            "Rims": "20'' Aero",
-            "Packages": "Komfort, Pilot, Plus",
-            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Elektrokromatisk panoramatak, Sotede ruter bak, Digitalt bakspeil",
-            "Bundle": "Prime-pakken",
-            "Model": "Polestar 4 SUV",
-            "Engine": "Dual motor",
-            "ModelYear": "2027",
-            "Drive": "Firehjulstrekk",
-            "DeliveryDate": "DeliveryDate "
-          }
-        },
-        {
           "id": "815PAPP0E11937200P01100      00000220002221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig mars; earliestDeliveryDate=2027-03-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig mars hos alle lokasjoner",
           "estimated_delivery": "2027-03-10",
@@ -2918,6 +2919,32 @@
             "Rims": "20'' Aero",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Sotede ruter bak",
+            "Bundle": "Prime-pakken",
+            "Model": "Polestar 4 SUV",
+            "Engine": "Dual motor",
+            "ModelYear": "2027",
+            "Drive": "Firehjulstrekk",
+            "DeliveryDate": "DeliveryDate "
+          }
+        },
+        {
+          "id": "815PAPP0E11937500P04300      00000220002221002221003221010229001XAEROWXCBL22XCOMFOXPLUSS-2027-202630-nb-NO",
+          "delivery_raw": "earliestDeliveryDateLabel=Tidlig mars; earliestDeliveryDate=2027-03-10T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig mars hos alle lokasjoner",
+          "estimated_delivery": "2027-03-10",
+          "estimate_kind": "date",
+          "before_deadline": false,
+          "delivery_label": "Tidlig mars",
+          "version": "Dual motor · Aurora · 20\" Aero · Prime",
+          "model_year": "2027",
+          "packs": [
+            "Prime-pakken"
+          ],
+          "features": {
+            "Color": "Aurora",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "20'' Aero",
+            "Packages": "Komfort, Pilot, Plus",
+            "Option": "AC-ladekabel for offentlig/hjemme veggboks (22 kW), Elektrokromatisk panoramatak, Sotede ruter bak, Digitalt bakspeil",
             "Bundle": "Prime-pakken",
             "Model": "Polestar 4 SUV",
             "Engine": "Dual motor",
@@ -2956,27 +2983,41 @@
       "by_delivery": [
         {
           "period": "Tidlig desember 2026",
-          "earliest": "2026-12-07",
-          "latest": "2026-12-15",
-          "count": 45,
+          "earliest": "2026-12-08",
+          "latest": "2026-12-08",
+          "count": 15,
           "before_deadline": true,
           "versions": {
-            "Dual motor · Ozone · 20\" Aero · Prime": 2,
-            "Dual motor · Space · 20\" Aero · Prime": 6,
-            "Dual motor · Stratus · 20\" Aero · Prime": 4,
+            "Dual motor · Ozone · 20\" Aero · Prime": 1,
+            "Dual motor · Space · 20\" Aero · Prime": 4,
+            "Dual motor · Stratus · 20\" Aero · Prime": 2,
             "Dual motor · Lightning · 20\" Aero · Business": 1,
-            "Dual motor · Lightning · 20\" Aero · Prime": 5,
+            "Dual motor · Lightning · 20\" Aero · Prime": 3,
             "Dual motor · Aurora · 20\" Aero · Prime": 1,
             "Dual motor · Ozone · 22\" Performance · Prime · Performance": 1,
             "Dual motor · Stratus · 20\" Aero · Business": 1,
-            "Dual motor · Stratus · 21\" Plus · Prime": 5,
-            "Dual motor · Aurora · 21\" Plus · Prime": 2,
+            "Dual motor · Stratus · 21\" Plus · Prime": 1
+          }
+        },
+        {
+          "period": "Slutten av desember 2026",
+          "earliest": "2026-12-16",
+          "latest": "2026-12-16",
+          "count": 30,
+          "before_deadline": true,
+          "versions": {
             "Dual motor · Lightning · 21\" Plus · Prime": 3,
-            "Dual motor · Snow · 22\" Performance · Prime · Performance": 1,
+            "Dual motor · Lightning · 20\" Aero · Prime": 2,
+            "Dual motor · Space · 20\" Aero · Prime": 2,
+            "Dual motor · Stratus · 20\" Aero · Prime": 2,
+            "Dual motor · Aurora · 21\" Plus · Prime": 2,
+            "Dual motor · Snow · 20\" Aero · Prime": 2,
             "Dual motor · Space · 21\" Plus · Prime": 5,
-            "Dual motor · Snow · 21\" Plus · Prime": 5,
+            "Dual motor · Snow · 22\" Performance · Prime · Performance": 1,
+            "Dual motor · Stratus · 21\" Plus · Prime": 4,
+            "Dual motor · Snow · 21\" Plus · Prime": 4,
+            "Dual motor · Ozone · 20\" Aero · Prime": 1,
             "Dual motor · Ozone · 21\" Plus · Prime": 1,
-            "Dual motor · Snow · 20\" Aero · Prime": 1,
             "Dual motor · Space · 20\" Aero · Business": 1
           }
         },
@@ -3012,17 +3053,18 @@
           "period": "Tidlig februar 2027",
           "earliest": "2027-02-02",
           "latest": "2027-02-10",
-          "count": 27,
+          "count": 28,
           "before_deadline": false,
           "versions": {
             "Dual motor · Stratus · 20\" Aero · Prime": 4,
             "Dual motor · Aurora · 20\" Aero · Prime": 4,
             "Dual motor · Stratus · 22\" Performance · Prime · Performance": 4,
+            "Dual motor · Lightning · 20\" Aero · Business": 1,
             "Dual motor · Lightning · 20\" Aero · Prime": 3,
+            "Dual motor · Ozone · 21\" Plus · Prime": 1,
             "Dual motor · Snow · 20\" Aero · Prime": 2,
             "Dual motor · Snow · 21\" Plus · Prime": 2,
             "Dual motor · Stratus · 21\" Plus · Prime": 2,
-            "Dual motor · Ozone · 21\" Plus · Prime": 1,
             "Dual motor · Lightning · 21\" Plus · Prime": 1,
             "Dual motor · Ozone · 22\" Performance · Prime · Performance": 1,
             "Dual motor · Aurora · 21\" Plus · Prime": 1,
@@ -3036,29 +3078,29 @@
           "count": 3,
           "before_deadline": false,
           "versions": {
-            "Dual motor · Aurora · 20\" Aero · Prime": 1,
             "Dual motor · Space · 20\" Aero · Prime": 1,
+            "Dual motor · Aurora · 20\" Aero · Prime": 1,
             "Dual motor · Lightning · 20\" Aero · Prime": 1
           }
         }
       ],
       "pending_removed": [
         {
-          "id": "815PAPP0E11970700P01100      00000220002221010229001XAEROWXCOMFOXPLUSS-2027-202630-nb-NO",
+          "id": "815PAPP0E11970700P04300      00000220002221010223010229001XCOMFOXPLUSS-2027-202630-nb-NO",
           "delivery_raw": "earliestDeliveryDateLabel=Tidlig desember; earliestDeliveryDate=2026-12-15T23:59:59.999Z; stockTypeDeliveryDateLabel=Tilgjengelig fra tidlig desember hos alle lokasjoner",
           "estimated_delivery": "2026-12-15",
           "estimate_kind": "date",
           "before_deadline": true,
           "delivery_label": "Tidlig desember",
-          "version": "Dual motor · Snow · 20\" Aero · Prime",
+          "version": "Dual motor · Snow · 21\" Plus · Prime",
           "model_year": "2027",
           "packs": [
             "Prime-pakken"
           ],
           "features": {
             "Color": "Snow",
-            "Upholstery": "Bridge of Weir skinn i Charcoal med dekorpaneler i Charcoal",
-            "Rims": "20'' Aero",
+            "Upholstery": "Bio-attributed MicroTech i Charcoal med dekorpaneler i Zinc",
+            "Rims": "21'' Plus",
             "Packages": "Komfort, Pilot, Plus",
             "Option": "Sotede ruter bak",
             "Bundle": "Prime-pakken",
